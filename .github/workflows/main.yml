@@ -23,7 +23,7 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install feedparser requests beautifulsoup4 readability-lxml mistralai playwright
+        pip install feedparser requests beautifulsoup4 readability-lxml mistralai playwright lxml[html_clean]
 
     - name: Install Playwright Browsers
       run: |
@@ -41,4 +41,3 @@ jobs:
         git add .
         git commit -m "Update news summary $(date)"
         git push
-
