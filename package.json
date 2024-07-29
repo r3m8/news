@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "@mozilla/readability": "^0.5.0",
+    "js-yaml": "^4.1.0",
+    "jsdom": "^24.1.1",
+    "p-limit": "^6.1.0",
+    "puppeteer": "^22.14.0",
+    "rss-parser": "^3.13.0"
+  }
+}
