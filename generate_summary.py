@@ -13,7 +13,7 @@ rss_url = "https://www.tomshardware.com/feeds/all"
 
 # Mistral AI client setup
 api_key = os.getenv("MISTRAL_API_KEY")
-model = "mistral-large-latest"
+model = "open-mistral-nemo"
 client = MistralClient(api_key=api_key)
 
 # Function to fetch RSS feed
