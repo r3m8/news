@@ -13,7 +13,7 @@ rss_url = "https://www.tomshardware.com/feeds/all"
 
 # Mistral AI client setup
 api_key = os.getenv("MISTRAL_API_KEY")
-model = "mistral-large-latest"
+model = "open-mistral-nemo"
 client = MistralClient(api_key=api_key)
 
 # Function to fetch RSS feed
@@ -85,7 +85,7 @@ def main():
     full_content = prompt + full_content
 
     # Summarize the content
-    summary = summarize_content(full_content)
+    # summary = summarize_content(full_content)
 
     # Generate Markdown file
     # summary_filename = f"summary_{date_str}.md"
