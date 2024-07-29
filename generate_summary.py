@@ -88,11 +88,11 @@ def main():
     summary = summarize_content(full_content)
 
     # Generate Markdown file
-    summary_filename = f"summary_{date_str}.md"
-    with open(summary_filename, "w") as f:
-        f.write(summary)
+    # summary_filename = f"summary_{date_str}.md"
+    # with open(summary_filename, "w") as f:
+    #     f.write(summary)
 
-    print(f"Summary generated and saved to {summary_filename}")
+    # print(f"Summary generated and saved to {summary_filename}")
     print(f"Full content saved to {full_content_filename}")
 
 if __name__ == "__main__":
