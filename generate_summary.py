@@ -13,7 +13,7 @@ rss_url = "https://www.tomshardware.com/feeds/all"
 
 # Mistral AI client setup
 api_key = os.getenv("MISTRAL_API_KEY")
-model = "open-mistral-nemo"
+model = "mistral-large-latest"
 client = MistralClient(api_key=api_key)
 
 # Function to fetch RSS feed
@@ -70,6 +70,12 @@ def main():
     # Concatenate all articles content
     full_content = "\n\n".join(articles)
 
+    # Save full content to a text file for debugging purposes
+    date_str = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+    full_content_filename = f"full_content_{date_str}.txt"
+    with open(full_content_filename, "w") as f:
+        f.write(full_content)
+
     # Add the prompt for Mistral API
     prompt = (
         "This text contains several articles. I'd like you to summarize them exhaustively, "
@@ -82,12 +88,12 @@ def main():
     summary = summarize_content(full_content)
 
     # Generate Markdown file
-    date_str = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-    filename = f"{date_str}.md"
-    with open(filename, "w") as f:
+    summary_filename = f"summary_{date_str}.md"
+    with open(summary_filename, "w") as f:
         f.write(summary)
 
-    print(f"Summary generated and saved to {filename}")
+    print(f"Summary generated and saved to {summary_filename}")
+    print(f"Full content saved to {full_content_filename}")
 
 if __name__ == "__main__":
     main()
