@@ -57,7 +57,10 @@ async function getHtmlContent(url) {
 }
 
 async function extractContent(html) {
-  const doc = new JSDOM(html);
+  const doc = new JSDOM(html, {
+    resources: 'usable',
+    virtualConsole: new JSDOM.VirtualConsole().sendTo(console, { omitJSDOMErrors: true })
+  });
   const reader = new Readability(doc.window.document);
   const article = reader.parse();
 
