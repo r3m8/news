@@ -4,12 +4,12 @@ const yaml = require('js-yaml');
 const Parser = require('rss-parser');
 const puppeteer = require('puppeteer');
 const { Readability } = require('@mozilla/readability');
-const { JSDOM } = require('jsdom');
+const { JSDOM, VirtualConsole } = require('jsdom');
 
 // Configuration
 const CONFIG_FILE = 'feeds.yml';
 const OUTPUT_DIR = 'summaries';
-const CONCURRENCY_LIMIT = 5;
+const CONCURRENCY_LIMIT = 1;
 
 // YAML structure definition
 const yamlStructure = `
@@ -57,11 +57,13 @@ async function getHtmlContent(url) {
 }
 
 async function extractContent(html) {
-  const doc = new JSDOM(html, {
+  const virtualConsole = new VirtualConsole();
+  virtualConsole.on('error', () => {});
+  const dom = new JSDOM(html, {
     resources: 'usable',
-    virtualConsole: new JSDOM.VirtualConsole().sendTo(console, { omitJSDOMErrors: true })
+    virtualConsole: virtualConsole
   });
-  const reader = new Readability(doc.window.document);
+  const reader = new Readability(dom.window.document);
   const article = reader.parse();
 
   if (article) {
