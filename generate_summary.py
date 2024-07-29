@@ -4,9 +4,9 @@ from readability import Document
 import time
 from datetime import datetime
 import os
+import subprocess
 from mistralai.client import MistralClient
 from mistralai.models.chat_completion import ChatMessage
-from playwright.sync_api import sync_playwright
 
 # RSS feed URL
 rss_url = "https://www.tomshardware.com/feeds/all"
@@ -20,18 +20,28 @@ client = MistralClient(api_key=api_key)
 def fetch_rss_feed(url):
     return feedparser.parse(url)
 
-# Function to extract content from a webpage using Playwright
+# Function to extract content from a webpage using curl
 def extract_content(url):
-    with sync_playwright() as p:
-        browser = p.chromium.launch()
-        page = browser.new_page()
-        page.goto(url)
-        content = page.content()
-        browser.close()
+    result = subprocess.run(['curl', '-s', url], capture_output=True, text=True)
+    content = result.stdout
 
     soup = BeautifulSoup(content, 'html.parser')
     doc = Document(soup.prettify())
     return doc.summary()
+
+# Commented out Playwright code for debugging purposes
+# from playwright.sync_api import sync_playwright
+# def extract_content(url):
+#     with sync_playwright() as p:
+#         browser = p.chromium.launch()
+#         page = browser.new_page()
+#         page.goto(url)
+#         content = page.content()
+#         browser.close()
+#
+#     soup = BeautifulSoup(content, 'html.parser')
+#     doc = Document(soup.prettify())
+#     return doc.summary()
 
 # Function to summarize content using Mistral AI client
 def summarize_content(content):
