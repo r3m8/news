@@ -1,4 +1,4 @@
-name: Generate News Summary ${{ github.run_id }}
+name: Generate News Summary
 
 on:
   push:
