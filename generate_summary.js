@@ -42,7 +42,7 @@ async function fetchRssFeed(url) {
 }
 
 async function getHtmlContent(url) {
-  const browser = await puppeteer.launch();
+  const browser = await puppeteer.launch({ headless: 'shell' });
   try {
     const page = await browser.newPage();
     await page.goto(url, { waitUntil: 'networkidle0' });
