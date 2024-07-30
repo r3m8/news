@@ -165,16 +165,17 @@ async function getSummaryFromAI(content) {
   });
 
   const prompt = `
-Context: The texts below are written in markdown. They are several articles written in English on various subjects. They come from several different sites.
+Context: The texts below are written in markdown. They are several articles written in English on various subjects. They come from several different sites. They may deal with the same subject.
 
-Instruction: summarize the texts below, being as complete and exhaustive as possible. At the end of each topic, mention the sources used. If several texts deal with the same subject, combine the information to avoid duplication and be more precise.
-
+Instruction: summarize the topics covered in the texts below. If two texts deal with the same subject, gather information to avoid duplication and be more precise. The most important thing is for the information to be as complete as possible, exhaustive information that includes every available piece of information.
+Answer in markdown and without using introductory or concluding sentences, just the summary itself of the texts.
+  
 ${content}
   `;
 
   try {
     const response = await client.chat.completions.create({
-      model: "deepseek-chat",
+      model: "deepseek-coder",
       messages: [
         { role: "system", content: "You are a helpful assistant" },
         { role: "user", content: prompt }
