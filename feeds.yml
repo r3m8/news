@@ -3,3 +3,5 @@ feeds:
     url: https://www.tomshardware.com/feeds/all
   - name: Phoronix
     url: https://www.phoronix.com/rss.php
+  - name: Wccftech
+    url: https://wccftech.com/feed
