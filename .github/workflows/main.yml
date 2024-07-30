@@ -11,9 +11,6 @@ jobs:
   generate-summary:
     runs-on: ubuntu-latest
 
-    env:
-      ACTIONS_STEP_DEBUG: true
-
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
@@ -34,12 +31,9 @@ jobs:
 
     - name: Commit and push changes
       run: |
-        set -e
-        set -x
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+        git config advice.addIgnoredFile false
         git add *
-        git -v status
-        git -v commit -m "ci: Update news summary $(date)"
-        git -v push
-      continue-on-error: true
+        git commit -m "ci: Update news summary $(date)"
+        git push
