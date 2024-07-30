@@ -5,7 +5,7 @@ const Parser = require('rss-parser');
 const puppeteer = require('puppeteer');
 const { Readability } = require('@mozilla/readability');
 const { JSDOM, VirtualConsole } = require('jsdom');
-const { Configuration, OpenAIApi } = require('openai');
+const OpenAI = require('openai');
 
 // Configuration
 const CONFIG_FILE = 'feeds.yml';
@@ -159,11 +159,10 @@ async function writeMarkdownFile(content, fileName) {
 }
 
 async function getSummaryFromAI(content) {
-  const configuration = new Configuration({
+  const client = new OpenAI({
     apiKey: process.env.DEEPSEEK_API_KEY,
-    basePath: 'https://api.deepseek.com',
+    baseURL: "https://api.deepseek.com"
   });
-  const openai = new OpenAIApi(configuration);
 
   const prompt = `
 Context: The texts below are written in markdown. They are several articles written in English on various subjects. They come from several different sites.
@@ -174,16 +173,16 @@ ${content}
   `;
 
   try {
-    const response = await openai.createChatCompletion({
-      model: 'deepseek-chat',
+    const response = await client.chat.completions.create({
+      model: "deepseek-chat",
       messages: [
-        { role: 'system', content: 'You are a helpful assistant' },
-        { role: 'user', content: prompt },
+        { role: "system", content: "You are a helpful assistant" },
+        { role: "user", content: prompt }
       ],
-      stream: false,
+      stream: false
     });
 
-    return response.data.choices[0].message.content;
+    return response.choices[0].message.content;
   } catch (error) {
     console.error('Error getting summary from AI:', error);
     return '';
