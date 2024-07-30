@@ -10,6 +10,7 @@ const { JSDOM, VirtualConsole } = require('jsdom');
 const CONFIG_FILE = 'feeds.yml';
 const OUTPUT_DIR = 'summaries';
 const CONCURRENCY_LIMIT = 1;
+const REQUEST_INTERVAL = 1500;
 
 // YAML structure definition
 const yamlStructure = `
@@ -42,7 +43,7 @@ async function fetchRssFeed(url) {
 }
 
 async function getHtmlContent(url) {
-  const browser = await puppeteer.launch({ headless: 'shell' });
+  const browser = await puppeteer.launch({ headless: 'new' });
   try {
     const page = await browser.newPage();
     await page.goto(url, { waitUntil: 'networkidle0' });
@@ -81,30 +82,54 @@ async function extractContent(html) {
   }
 }
 
-function formatAsMarkdown(title, content) {
-  return `# ${title}\n${content}\n\n---\n\n`;
+function formatAsMarkdown(title, websiteName, url, content) {
+  return `# ${title}\n\n[${websiteName}](${url})\n\n${content}\n\n---\n\n`;
+}
+
+function delay(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
 }
 
 async function processFeeds() {
   const feeds = await getFeedsFromYaml();
-  const { default: pLimit } = await import('p-limit');
-  const limit = pLimit(CONCURRENCY_LIMIT);
   let fullContent = '';
 
+  const PQueue = (await import('p-queue')).default;
+  const queue = new PQueue({ concurrency: CONCURRENCY_LIMIT });
+
+  // Collect all links from all feeds
+  const allLinks = [];
   for (const feed of feeds) {
     const feedData = await fetchRssFeed(feed.url);
     if (!feedData) continue;
 
-    const itemPromises = feedData.items.map(item => limit(async () => {
-      const html = await getHtmlContent(item.link);
-      if (!html) return '';
+    for (const item of feedData.items) {
+      allLinks.push({ feedName: feed.name, link: item.link });
+    }
+  }
 
-      const { title, content } = await extractContent(html);
-      return formatAsMarkdown(title, content);
-    }));
+  // Process links in an alternating manner
+  let index = 0;
+  while (index < allLinks.length) {
+    for (const feed of feeds) {
+      const link = allLinks.find(l => l.feedName === feed.name && !l.processed);
+      if (link) {
+        link.processed = true;
+        await queue.add(async () => {
+          console.log(`Exploring link: ${link.link}`);
+          const html = await getHtmlContent(link.link);
+          if (!html) return;
 
-    const itemContents = await Promise.all(itemPromises);
-    fullContent += itemContents.join('');
+          const { title, content } = await extractContent(html);
+          console.log(`Finished loading link: ${link.link}`);
+          fullContent += formatAsMarkdown(title, feed.name, link.link, content);
+
+          console.log(`Waiting for ${REQUEST_INTERVAL / 1000} seconds before next request...`);
+          await delay(REQUEST_INTERVAL);
+        });
+      }
+    }
+    index++;
   }
 
   return fullContent;
@@ -127,8 +152,10 @@ async function writeMarkdownFile(content) {
 
 async function main() {
   try {
+    console.log('Starting to process feeds...');
     const content = await processFeeds();
     await writeMarkdownFile(content);
+    console.log('Finished processing feeds.');
   } catch (error) {
     console.error('An error occurred:', error);
   }
