@@ -25,9 +25,7 @@ jobs:
         npm install
 
     - name: Fetch RSS feed and generate summary
-      env:
-        MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
-      run: node generate_summary.js
+      run: node --no-deprecation generate_summary.js
 
     - name: Commit and push changes
       run: |

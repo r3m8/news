@@ -1,6 +1,6 @@
 const fs = require('fs').promises;
 const path = require('path');
-const yaml = require('js-yaml');
+const yaml = require('yaml');
 const Parser = require('rss-parser');
 const puppeteer = require('puppeteer');
 const { Readability } = require('@mozilla/readability');
@@ -24,7 +24,7 @@ feeds:
 async function getFeedsFromYaml() {
   try {
     const fileContents = await fs.readFile(CONFIG_FILE, 'utf8');
-    const data = yaml.load(fileContents);
+    const data = yaml.parse(fileContents);
     return data.feeds;
   } catch (error) {
     console.error('Error reading YAML file:', error);
