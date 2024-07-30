@@ -1,3 +1,5 @@
 feeds:
   - name: Tomshardware US
     url: https://www.tomshardware.com/feeds/all
+  - name: Phoronix
+    url: https://www.phoronix.com/rss.php
