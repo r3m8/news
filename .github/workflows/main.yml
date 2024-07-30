@@ -25,12 +25,12 @@ jobs:
         npm install
 
     - name: Fetch RSS feed and generate summary
-      run: node --no-deprecation generate_summary.js
+      run: node generate_summary.js
 
     - name: Commit and push changes
       run: |
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-        git config advice.addIgnoredFile false
-        git add *
+        git add .
         git commit -m "ci: Update news summary $(date)"
+        git push
