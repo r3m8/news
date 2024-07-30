@@ -90,6 +90,10 @@ function delay(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
+function parsePubDate(pubDate) {
+  return new Date(pubDate);
+}
+
 async function processFeeds() {
   const feeds = await getFeedsFromYaml();
   let fullContent = '';
@@ -104,7 +108,13 @@ async function processFeeds() {
     if (!feedData) continue;
 
     for (const item of feedData.items) {
-      allLinks.push({ feedName: feed.name, link: item.link });
+      const pubDate = parsePubDate(item.pubDate);
+      const now = new Date();
+      const sixHoursAgo = new Date(now.getTime() - 6 * 60 * 60 * 1000);
+
+      if (pubDate >= sixHoursAgo) {
+        allLinks.push({ feedName: feed.name, link: item.link });
+      }
     }
   }
 
