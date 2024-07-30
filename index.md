@@ -9,4 +9,3 @@ title: Summaries
     - [{{ file.name | remove: '.md' }}]({{ site.baseurl }}{{ file.path | remove: '.md' | append: '.html' }})
   {% endif %}
 {% endfor %}
-{% endraw %}
