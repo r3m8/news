@@ -5,6 +5,7 @@ const Parser = require('rss-parser');
 const puppeteer = require('puppeteer');
 const { Readability } = require('@mozilla/readability');
 const { JSDOM, VirtualConsole } = require('jsdom');
+const { Configuration, OpenAIApi } = require('openai');
 
 // Configuration
 const CONFIG_FILE = 'feeds.yml';
@@ -145,10 +146,7 @@ async function processFeeds() {
   return fullContent;
 }
 
-async function writeMarkdownFile(content) {
-  const date = new Date();
-  const dateStr = `${String(new Date().getHours()).padStart(2, '0')}-${String(new Date().getMinutes()).padStart(2, '0')}-${String(new Date().getDate()).padStart(2, '0')}-${String(new Date().getMonth() + 1).padStart(2, '0')}-${String(new Date().getFullYear()).slice(-2)}`;
-  const fileName = `full_content_${dateStr}.md`;
+async function writeMarkdownFile(content, fileName) {
   const filePath = path.join(OUTPUT_DIR, fileName);
 
   try {
@@ -160,11 +158,51 @@ async function writeMarkdownFile(content) {
   }
 }
 
+async function getSummaryFromAI(content) {
+  const configuration = new Configuration({
+    apiKey: process.env.DEEPSEEK_API_KEY,
+    basePath: 'https://api.deepseek.com',
+  });
+  const openai = new OpenAIApi(configuration);
+
+  const prompt = `
+Context: The texts below are written in markdown. They are several articles written in English on various subjects. They come from several different sites.
+
+Instruction: summarize the texts below, being as complete and exhaustive as possible. At the end of each topic, mention the sources used. If several texts deal with the same subject, combine the information to avoid duplication and be more precise.
+
+${content}
+  `;
+
+  try {
+    const response = await openai.createChatCompletion({
+      model: 'deepseek-chat',
+      messages: [
+        { role: 'system', content: 'You are a helpful assistant' },
+        { role: 'user', content: prompt },
+      ],
+      stream: false,
+    });
+
+    return response.data.choices[0].message.content;
+  } catch (error) {
+    console.error('Error getting summary from AI:', error);
+    return '';
+  }
+}
+
 async function main() {
   try {
     console.log('Starting to process feeds...');
     const content = await processFeeds();
-    await writeMarkdownFile(content);
+    const date = new Date();
+    const dateStr = `${String(new Date().getHours()).padStart(2, '0')}-${String(new Date().getMinutes()).padStart(2, '0')}-${String(new Date().getDate()).padStart(2, '0')}-${String(new Date().getMonth() + 1).padStart(2, '0')}-${String(new Date().getFullYear()).slice(-2)}`;
+    const fileName = `full_content_${dateStr}.md`;
+    await writeMarkdownFile(content, fileName);
+
+    const summary = await getSummaryFromAI(content);
+    const summaryFileName = `summary_${dateStr}.md`;
+    await writeMarkdownFile(summary, summaryFileName);
+
     console.log('Finished processing feeds.');
   } catch (error) {
     console.error('An error occurred:', error);
