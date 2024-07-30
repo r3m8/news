@@ -46,7 +46,7 @@ async function getHtmlContent(url) {
   const browser = await puppeteer.launch({ headless: 'new' });
   try {
     const page = await browser.newPage();
-    await page.goto(url, { waitUntil: 'networkidle0' });
+    await page.goto(url, { waitUntil: 'domcontentloaded' });
     const content = await page.content();
     return content;
   } catch (error) {
