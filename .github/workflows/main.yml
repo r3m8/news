@@ -34,4 +34,3 @@ jobs:
         git config advice.addIgnoredFile false
         git add *
         git commit -m "ci: Update news summary $(date)"
-        git push
