@@ -28,7 +28,7 @@ async function getFeedsFromYaml() {
 }
 
 async function fetchRssFeed(url) {
-  const browser = await puppeteer.launch({ headless: 'new' });
+  const browser = await launch({ headless: 'new' });
   try {
     const page = await browser.newPage();
     let responseBody = '';
