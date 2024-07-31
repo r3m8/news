@@ -1,31 +1,25 @@
-const fs = require('fs').promises;
-const path = require('path');
-const yaml = require('yaml');
-const Parser = require('rss-parser');
-const puppeteer = require('puppeteer');
-const { Readability } = require('@mozilla/readability');
-const { JSDOM, VirtualConsole } = require('jsdom');
-const OpenAI = require('openai');
+import { promises as fs } from 'fs';
+import { join } from 'path';
+import { parse } from 'yaml';
+import Parser from 'rss-parser';
+import { launch } from 'puppeteer';
+import { Readability } from '@mozilla/readability';
+import { JSDOM, VirtualConsole } from 'jsdom';
+import OpenAI from 'openai';
+import { countTokensInText } from './path/to/your/tokenizerFile.js';
 
-// Configuration
 const CONFIG_FILE = 'feeds.yml';
 const OUTPUT_DIR = 'summaries';
 const CONCURRENCY_LIMIT = 1;
-const REQUEST_INTERVAL = 1500;
+const REQUEST_INTERVAL = 0;
+const LLM_MODEL = 'deepseek-chat';
+const TOKENIZER_PATH = 'tokenizers/deepseek-v2-chat-0628.json';
 
-// YAML structure definition
-const yamlStructure = `
-feeds:
-  - name: Example Feed 1
-    url: https://example.com/feed1.rss
-  - name: Example Feed 2
-    url: https://example.com/feed2.rss
-`;
 
 async function getFeedsFromYaml() {
   try {
     const fileContents = await fs.readFile(CONFIG_FILE, 'utf8');
-    const data = yaml.parse(fileContents);
+    const data = parse(fileContents);
     return data.feeds;
   } catch (error) {
     console.error('Error reading YAML file:', error);
@@ -44,7 +38,7 @@ async function fetchRssFeed(url) {
 }
 
 async function getHtmlContent(url) {
-  const browser = await puppeteer.launch({ headless: 'new' });
+  const browser = await launch({ headless: 'new' });
   try {
     const page = await browser.newPage();
     await page.goto(url, { waitUntil: 'domcontentloaded' });
@@ -147,7 +141,7 @@ async function processFeeds() {
 }
 
 async function writeMarkdownFile(content, fileName) {
-  const filePath = path.join(OUTPUT_DIR, fileName);
+  const filePath = join(OUTPUT_DIR, fileName);
 
   try {
     await fs.mkdir(OUTPUT_DIR, { recursive: true });
@@ -165,19 +159,19 @@ async function getSummaryFromAI(content) {
   });
 
   const prompt = `
-Context: The texts below are written in markdown. They are several articles written in English on various subjects. They come from several different sites. They may deal with the same subject.
+Context: The texts below are written in markdown. They are several articles written in many languages on various subjects. They come from several different sites. They may deal with the same subject.
 
-Instruction: summarize the topics covered in the texts below. If two texts deal with the same subject, gather information to avoid duplication and be more precise. The most important thing is for the information to be as complete as possible, exhaustive information that includes every available piece of information.
+Instruction: summarize the topics covered in the texts below in English. If two texts deal with the same subject, gather information to avoid duplication and be more precise. The most important thing is for the information to be as complete as possible, exhaustive information that includes every available piece of information. Don't deal with articles that appear commercial or sponsored.
 Answer in markdown and without using introductory or concluding sentences, just the summary itself of the texts.
-  
+
 ${content}
   `;
 
   try {
     const response = await client.chat.completions.create({
-      model: "deepseek-coder",
+      model: LLM_MODEL,
       messages: [
-        { role: "system", content: "You are a helpful assistant" },
+        { role: "system", content: "You are a helpful assistant. Favors length and quality in answering questions." },
         { role: "user", content: prompt }
       ],
       stream: false
@@ -199,9 +193,11 @@ async function main() {
     const fileName = `full_content_${dateStr}.md`;
     await writeMarkdownFile(content, fileName);
 
-    const summary = await getSummaryFromAI(content);
-    const summaryFileName = `summary_${dateStr}.md`;
-    await writeMarkdownFile(summary, summaryFileName);
+    // const summary = await getSummaryFromAI(content);
+    // const summaryFileName = `summary_${dateStr}.md`;
+    // await writeMarkdownFile(summary, summaryFileName);
+
+    countTokensInText(content, TOKENIZER_PATH);
 
     console.log('Finished processing feeds.');
   } catch (error) {

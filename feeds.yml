@@ -1,7 +1,183 @@
 feeds:
-  - name: Tomshardware US
-    url: https://www.tomshardware.com/feeds/all
+  - name: 4Gamer
+    url: https://www.4gamer.net/rss/hardware/hw_news.xml
+  - name: Adrenaline
+    url: https://www.adrenaline.com.br/feed/
+  - name: AnandTech
+    url: https://www.anandtech.com/rss/
+  - name: Ars Technica (Features)
+    url: https://feeds.arstechnica.com/arstechnica/features
+  - name: Ars Technica (Index)
+    url: https://feeds.arstechnica.com/arstechnica/index
+  - name: Babel Tech Reviews
+    url: https://babeltechreviews.com/feed/
+  - name: Benchmark
+    url: https://www.benchmark.pl/rss/benchmark-pl.xml
+  - name: BenchLife
+    url: https://benchlife.info/feed/
+  - name: Bit-Tech
+    url: https://bit-tech.net/rss/
+  - name: CGDirector
+    url: https://www.cgdirector.com/feed/
+  - name: Chiphell
+    url: https://www.chiphell.com/forum.php?mod=rss&fid=317&auth=0
+  - name: Club386
+    url: https://www.club386.com/feed/
+  - name: Clubic
+    url: https://www.clubic.com/feed/clubic.rss
+  - name: CNET News
+    url: https://www.cnet.com/rss/news/
+  - name: ComputerBase (Artikel)
+    url: https://www.computerbase.de/rss/artikel.xml
+  - name: ComputerBase (News)
+    url: https://www.computerbase.de/rss/news.xml
+  - name: ComputerCity
+    url: https://computercity.com/feed
+  - name: CowcotLand
+    url: https://feeds.feedburner.com/cowcotland
+  - name: Digital Trends
+    url: https://www.digitaltrends.com/feed/
+  - name: DigiTimes
+    url: https://www.digitimes.com/rss/daily.xml
+  - name: El Chapuzas Informático
+    url: https://elchapuzasinformatico.com/feed/
+  - name: Engadget
+    url: https://www.engadget.com/rss.xml
+  - name: EnosTech
+    url: https://www.enostech.com/feed/
+  - name: eTeknix
+    url: https://www.eteknix.com/feed/
+  - name: Expreview
+    url: https://www.expreview.com/rss.php
+  - name: ExtremeTech
+    url: https://www.extremetech.com/feed
+  - name: Gadget Pilipinas
+    url: https://www.gadgetpilipinas.net/feed/
+  - name: GDM
+    url: https://www.gdm.or.jp/feed/
+  - name: Geeknetic
+    url: https://www.geeknetic.es/feeds.asp
+  - name: GinjFo (Actualités)
+    url: https://www.ginjfo.com/actualites/feed
+  - name: GinjFo (Dossiers)
+    url: https://www.ginjfo.com/dossiers/feed
+  - name: Golem
+    url: https://rss.golem.de/rss.php?ms=pc-komponenten&feed=RSS2.0
+  - name: Guru3D
+    url: https://www.guru3d.com/rss.xml
+  - name: Hardware And
+    url: https://hardwareand.co/?format=feed&type=rss
+  - name: Hardware Luxx
+    url: https://www.hardwareluxx.de/hwl.feed
+  - name: HardOCP
+    url: https://hardocp.com/blog?format=rss
+  - name: Hardware Times
+    url: https://hardwaretimes.com/feed/
+  - name: HardZone
+    url: https://hardzone.es/feed/
+  - name: Heise
+    url: https://www.heise.de/rss/heise-Rubrik-IT.rdf
+  - name: Hexus
+    url: https://hexus.net/rss/
+  - name: HKEPC
+    url: https://www.hkepc.com/feed
+  - name: Hot Hardware
+    url: https://hothardware.com/rss/news.aspx
+  - name: HW Busters
+    url: https://hwbusters.com/feed/
+  - name: HW Upgrade
+    url: https://feeds.hwupgrade.it/rss_news.xml
+  - name: igorsLAB
+    url: https://www.igorslab.de/feed/
+  - name: io-tech
+    url: https://www.io-tech.fi/feed/
+  - name: IT Hardware
+    url: https://ithardware.pl/feed
+  - name: KitGuru
+    url: https://www.kitguru.net/feed/
+  - name: Lowyat
+    url: https://www.lowyat.net/feed/
+  - name: MadBoxPC
+    url: https://feeds.feedburner.com/madboxpc/feed
+  - name: MuyComputer
+    url: https://www.muycomputer.com/feed/
+  - name: Neowin
+    url: https://www.neowin.net/news/rss/
+  - name: NotebookCheck (News)
+    url: https://www.notebookcheck.net/News.152.100.html
+  - name: NotebookCheck (Reviews)
+    url: https://www.notebookcheck.net/RSS-Feed-Notebook-Reviews.8156.0.html
+  - name: Overclock3D
+    url: https://overclock3d.net/feed/
+  - name: Overclocking
+    url: https://overclocking.com/feed/
+  - name: PC Games Hardware
+    url: https://www.pcgameshardware.de/feed.cfm?menu_alias=home/
+  - name: PC Masters
+    url: https://www.pcmasters.de/rss_sitemap.atom
+  - name: PC Per
+    url: https://pcper.com/feed/
+  - name: PC Watch
+    url: https://pc.watch.impress.co.jp/data/rss/1.0/pcw/feed.rdf
+  - name: PCWorld
+    url: https://www.pcworld.com/feed
   - name: Phoronix
     url: https://www.phoronix.com/rss.php
-  - name: Wccftech
-    url: https://wccftech.com/feed
+  - name: Play3r
+    url: https://play3r.net/feed/
+  - name: Profesional Review
+    url: https://www.profesionalreview.com/feed/
+  - name: PurePC
+    url: https://www.purepc.pl/rss_all.xml
+  - name: Serve The Home
+    url: https://www.servethehome.com/feed/
+  - name: Silent PC Review
+    url: https://silentpcreview.com/feed/
+  - name: Skatterbencher
+    url: https://skatterbencher.com/feed/
+  - name: Storage Review
+    url: https://www.storagereview.com/rss.xml
+  - name: SweClockers (Artiklar)
+    url: https://www.sweclockers.com/feeds/artiklar
+  - name: SweClockers (Nyheter)
+    url: https://www.sweclockers.com/feeds/nyheter
+  - name: Tech Critter
+    url: https://www.tech-critter.com/feed/
+  - name: Tech in Asia
+    url: https://feeds.feedburner.com/techinasia
+  - name: TechPowerUp (News)
+    url: https://www.techpowerup.com/rss/news
+  - name: TechPowerUp (Reviews)
+    url: https://www.techpowerup.com/rss/reviews
+  - name: Tech Spot (News)
+    url: https://www.techspot.com/backend.xml
+  - name: Tech Spot (Reviews)
+    url: https://www.techspot.com/reviews.xml
+  - name: Tech Testers
+    url: https://www.techtesters.eu/feed/
+  - name: TechTeam GB
+    url: https://techteamgb.co.uk/feed/
+  - name: The FPS Review
+    url: https://www.thefpsreview.com/feed/
+  - name: The Verge
+    url: https://www.theverge.com/rss/index.xml
+  - name: Tom's Hardware
+    url: https://www.tomshardware.com/feeds/all
+  - name: TweakTown (News)
+    url: https://www.tweaktown.com/feeds/news-mf.xml
+  - name: TweakTown (Reviews)
+    url: https://www.tweaktown.com/feeds/reviews.xml
+  - name: Unikos Hardware
+    url: http://feeds.feedburner.com/UnikosHardware
+  - name: VideoCardz
+    url: https://videocardz.com/rss-feed
+  - name: Vortez
+    url: https://www.vortez.net/articles_rss
+  - name: WCCF Tech
+    url: https://wccftech.com/feed/
+  - name: Windows Central
+    url: https://www.windowscentral.com/rss.xml
+  - name: XanxoGaming
+    url: https://xanxogaming.com/feed/
+  - name: XDA Developers
+    url: https://www.xda-developers.com/feed/
