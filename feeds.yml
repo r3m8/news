@@ -37,8 +37,6 @@ feeds:
     url: https://feeds.feedburner.com/cowcotland
   - name: Digital Trends
     url: https://www.digitaltrends.com/feed/
-  - name: DigiTimes
-    url: https://www.digitimes.com/rss/daily.xml
   - name: El Chapuzas Informático
     url: https://elchapuzasinformatico.com/feed/
   - name: Engadget
@@ -67,8 +65,6 @@ feeds:
     url: https://www.guru3d.com/rss.xml
   - name: Hardware And
     url: https://hardwareand.co/?format=feed&type=rss
-  - name: Hardware Luxx
-    url: https://www.hardwareluxx.de/hwl.feed
   - name: HardOCP
     url: https://hardocp.com/blog?format=rss
   - name: Hardware Times
@@ -79,8 +75,6 @@ feeds:
     url: https://www.heise.de/rss/heise-Rubrik-IT.rdf
   - name: Hexus
     url: https://hexus.net/rss/
-  - name: HKEPC
-    url: https://www.hkepc.com/feed
   - name: Hot Hardware
     url: https://hothardware.com/rss/news.aspx
   - name: HW Busters
