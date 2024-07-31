@@ -3,6 +3,8 @@ layout: default
 title: News
 ---
 
+# News
+
 <ul>
 {% for summary in site.pages %}
   {% if summary.path contains 'summaries/' %}
