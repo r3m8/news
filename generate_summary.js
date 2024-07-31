@@ -15,7 +15,6 @@ const REQUEST_INTERVAL = 0;
 const LLM_MODEL = 'deepseek-chat';
 const TOKENIZER_PATH = 'tokenizers/deepseek-v2-chat-0628.json';
 
-
 async function getFeedsFromYaml() {
   try {
     const fileContents = await fs.readFile(CONFIG_FILE, 'utf8');
@@ -28,12 +27,19 @@ async function getFeedsFromYaml() {
 }
 
 async function fetchRssFeed(url) {
-  const parser = new Parser();
+  const browser = await launch({ headless: 'new' });
   try {
-    return await parser.parseURL(url);
+    const page = await browser.newPage();
+    await page.goto(url, { waitUntil: 'domcontentloaded' });
+    const content = await page.content();
+
+    const parser = new Parser();
+    return await parser.parseString(content);
   } catch (error) {
     console.error(`Error fetching RSS feed ${url}:`, error);
     return null;
+  } finally {
+    await browser.close();
   }
 }
 
