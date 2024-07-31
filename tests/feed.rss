@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/" xmlns:media="http://search.yahoo.com/mrss/">
+
+<channel>
+	<title>UNIKO's Hardware</title>
+	<atom:link href="https://unikoshardware.com/feed" rel="self" type="application/rss+xml"/>
+	<link>https://unikoshardware.com</link>
+	<description>電腦硬體評測開箱</description>
+	<lastBuildDate>Wed, 31 Jul 2024 12:34:23 +0000</lastBuildDate>
+	<language>zh-TW</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.3.5</generator>
+
+<image>
+	<url>https://img.unikoshardware.com/wp-content/uploads/2022/01/cropped-712-350x350.jpg</url>
+	<title>UNIKO's Hardware</title>
+	<link>https://unikoshardware.com</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>2024 年第 2 季 AMD 財務報告與近期業務亮點</title>
+		<link>https://unikoshardware.com/2024/07/amd-2024-q2-financial-report-pr.html</link>
+					<comments>https://unikoshardware.com/2024/07/amd-2024-q2-financial-report-pr.html#respond</comments>
+		
+		<dc:creator><![CDATA[Press Release]]></dc:creator>
+		<pubDate>Wed, 31 Jul 2024 12:33:51 +0000</pubDate>
+				<category><![CDATA[新聞稿]]></category>
+		<category><![CDATA[AMD]]></category>
+		<guid isPermaLink="false">https://unikoshardware.com/?p=150239</guid>
+
+					<description><![CDATA[Press Release AMD 公佈 2024 年第 2 季營收為 58 億美元，毛利率為 49%，營業利 [&#8230;]]]></description>
+										<content:encoded><![CDATA[<div class="alert alert-info" style="text-align: center;"><strong>Press Release</strong></div>
+<p><img decoding="async" fetchpriority="high" class="aligncenter size-full wp-image-150241" src="https://img.unikoshardware.com/wp-content/uploads/2024/07/amd-reports-q2-2024-financial-results.webp" alt="2024 年第 2 季 AMD 財務報告與近期業務亮點" width="1200" height="675" /></p>
+<p><a href="http://www.amd.com/" target="_blank" rel="noopener">AMD</a> 公佈 2024 年第 2 季營收為 58 億美元，毛利率為 49%，營業利益為 2.69 億美元，淨利 2.65 億美元，稀釋後每股收益 0.16 美元。以非美國一般公認會計原則 (non-GAAP) 計算，毛利率為 53%，營業利益為 13 億美元，淨利 11 億美元，稀釋後每股收益則為 0.69 美元。</p>
+<p>AMD 董事長暨執行長蘇姿丰博士表示，AMD 在第 2 季度展現出強勁的營收與收益成長，成長動能主要來自資料中心事業群創下紀錄的營收。AMD 的人工智慧 (AI) 業務持續加速攀升，在 Instinct、EPYC 和 Ryzen 處理器的市場需求帶動下，AMD 已為下半年營收的強勁成長做好充分準備。生成式 AI 的快速發展正推動各市場對運算能力的更高需求，隨著 AMD 將領先的 AI 解決方案貫穿整體業務，這為 AMD 創造了巨大的成長機會。</p>
+<p>AMD 執行副總裁暨財務長與出納長 Jean Hu 表示，AMD 在第 2 季度表現出色，在資料中心與客戶端事業群強勁成長的推動下，營收超越 AMD 的業績指引中點。此外，AMD 擴大毛利率並達到穩健的收益成長，同時增加策略性 AI 投資，為未來成長奠定基礎。</p>
+<p><span id="more-150239"></span></p>
+<h2><strong>2024 Q2 AMD 財務報告</strong></h2>
+<h3>本季財務績效摘要</h3>
+<ul>
+<li>本季資料中心事業群營收創季度新高，達 28 億美元，比去年同期增長 115%，成長動能主要來自於 AMD Instinct GPU 出貨量的大幅成長以及第 4 代 AMD EPYC CPU 銷售的強勁成長。營收較上一季增長 21%，主要得益於 AMD Instinct GPU 出貨量的強勁成長。</li>
+<li>本季客戶端事業群營收為 15 億美元，較去年同期增長 49%，比上一季增長 9%，成長動能主要來自於 AMD Ryzen 處理器的銷售成長。</li>
+<li>本季遊戲事業群營收為 6.48 億美元，較去年同期下降 59%，比上一季下降 30%，主要原因是半客製化業務營收減少。</li>
+<li>本季嵌入式事業群營收為 8.61 億美元，較去年同期下降 41%，主要由於客戶繼續調整庫存量。營收較上一季增長 2%。</li>
+</ul>
+<h3>近期業務亮點</h3>
+<ul>
+<li>AMD 擴展領先的端對端 AI 解決方案產品組合，推出全新 CPU、GPU、NPU 與軟體產品：
+<ul>
+<li>AMD 在 COMPUTEX 2024 <a href="https://www.amd.com/en/newsroom/press-releases/2024-6-2-amd-accelerates-pace-of-data-center-ai-innovation-.html" target="_blank" rel="noopener">揭示</a>擴展後的 AMD Instinct 加速器藍圖，帶來領先的 AI 效能與記憶體功能之年度進程。藍圖包括全新 AMD Instinct MI325X 加速器，預計將在 2024 年第 4 季上市，提供領先業界的記憶體容量和運算效能。新一代 AMD CDNA 4 架構預計在 2025 年推出，相較基於 AMD CDNA 3 架構的 AMD Instinct 加速器，預計提供高達 35 倍的 AI 推論效能提升。</li>
+<li>AMD <a href="https://www.amd.com/en/newsroom/press-releases/2024-6-2-amd-unveils-next-gen-zen-5-ryzen-processors-to-p.html" target="_blank" rel="noopener">發表</a> AMD Ryzen AI 300 系列處理器，其為第 3 代 AMD AI PC 處理器，為 Windows Copilot+ PC 帶來領先業界的 50 TOPS 的 AI 處理能力。宏碁、華碩、HP、聯想和微星等 OEM 合作夥伴發表搭載此系列處理器的全新裝置。</li>
+<li>AMD 與產業領袖們宣布成立 <a href="https://www.businesswire.com/news/home/20240530653602/en/AMD-Broadcom-Cisco-Google-Hewlett-Packard-Enterprise-Intel-Meta-and-Microsoft-Form-Ultra-Accelerator-Link-UALink-Promoter-Group-to-Drive-Data-Center-AI-Connectivity" target="_blank" rel="noopener">Ultra Accelerator Link 推廣組織</a>，將藉由 AMD Infinity Fabric 技術來推進基於開放標準的 AI 網路基礎架構系統。</li>
+<li>雲端服務供應商展示出由 AMD Instinct MI300X 加速器挹注效能的產品，<a href="https://www.amd.com/en/newsroom/press-releases/2024-5-21-amd-instinct-mi300x-accelerators-power-microsoft-a.html" target="_blank" rel="noopener">微軟</a>宣布全面推出全新 Azure ND MI300X V5 執行個體，為 GPT 工作負載提供領先的性價比。</li>
+<li>AMD 為高效能 AI 工作站<a href="https://www.amd.com/en/products/graphics/workstations/radeon-pro/w7900-dual-slot.html" target="_blank" rel="noopener">發表</a> AMD Radeon PRO W7900 雙槽工作站繪圖卡，並擴展 AMD ROCm 6.1.3 軟體支援，支援使用特定的 AMD Radeon 桌上型 GPU 增強 AI 開發和部署。</li>
+</ul>
+</li>
+<li>AMD 是眾多要求最嚴苛的企業與 HPC 工作負載的首選合作夥伴：
+<ul>
+<li>AMD <a href="https://www.amd.com/en/newsroom/press-releases/2024-6-2-amd-extends-ai-and-high-performance-leadership-in-.html" target="_blank" rel="noopener">預覽</a>的第 5 代 AMD EPYC 處理器 (代號為 “Turin”) 採用全新 “Zen 5” 核心架構，預計在 2024 下半年問市。</li>
+<li>Oracle 宣布推出由 AMD EPYC CPU 提供支援的 <a href="https://www.oracle.com/news/announcement/oracle-announces-in-database-llms-and-automated-in-database-vector-store-with-heatwave-genai-2024-06-26/" target="_blank" rel="noopener">HeatWave GenAI</a> 解決方案，讓客戶能夠為其企業資料挹注生成式 AI 效能，且無需 AI 專業知識。</li>
+<li>AMD 宣布推出 <a href="https://www.amd.com/en/newsroom/press-releases/2024-5-21-amd-expands-epyc-cpu-portfolio-to-bring-new-levels.html" target="_blank" rel="noopener">AMD EPYC 4004 系列處理器</a>，這款全新的成本最佳化產品可為中小型企業提供企業級功能和領先效能。</li>
+<li>橡樹嶺國家實驗室 (Oak Ridge National Lab，ORNL) 的 Frontier 超級電腦搭載 AMD EPYC CPU 與 AMD Instinct GPU，在最新的 <a href="https://www.amd.com/en/newsroom/press-releases/2024-5-13-amd-remains-the-partner-of-choice-for-world-s-fast.html" target="_blank" rel="noopener">Top500 全球超級電腦排行榜</a>中連續三屆稱霸全球最快超級電腦榜首。El Capitan Early Delivery System 等三部來自勞倫斯利佛摩國家實驗室 (Lawrence Livermore National Laboratories，LLNL) 的全新系統由 AMD Instinct MI300A APU 挹注效能，也名列 Top500 全球超級電腦排行榜。</li>
+</ul>
+</li>
+<li>AMD 推出全新的客戶端和顯示產品，奠基於為商業、消費者與狂熱級使用者推出的廣泛 PC 產品組合：
+<ul>
+<li>AMD <a href="https://www.amd.com/en/newsroom/press-releases/2024-6-2-amd-unveils-next-gen-zen-5-ryzen-processors-to-p.html" target="_blank" rel="noopener">宣布</a>推出基於 “Zen 5” 架構的全新 AMD Ryzen 9000 系列處理器，為遊戲、生產力與內容創作提供領先效能。</li>
+<li>AMD <a href="https://www.amd.com/en/newsroom/press-releases/2024-4-16-amd-expands-commercial-ai-pc-portfolio-to-deliver-.html" target="_blank" rel="noopener">推出</a> AMD Ryzen PRO 8040 系列和 8000 系列行動與桌上型處理器，為當今企業提供頂尖效能、易管理性及安全功能。</li>
+</ul>
+</li>
+<li>廣泛市場的客戶正運用 AMD 嵌入式解決方案為邊緣運算和邊緣 AI 提供支援：
+<ul>
+<li>Sun Singapore <a href="https://www.amd.com/en/newsroom/press-releases/2024-6-19-amd-to-power-ai-based-smart-parking-solution-for-s.html" target="_blank" rel="noopener">宣布</a>正在利用 AMD Zynq UltraScale+ MPSoC 元件，為其基於 AI 的智慧停車服務大型網路提供支援，加速影片分析和即時推論。</li>
+<li>Optiver <a href="https://www.amd.com/en/newsroom/press-releases/2024-5-7-optiver-chooses-amd-enterprise-portfolio-to-power-.html" target="_blank" rel="noopener">宣布</a>正廣泛採用 AMD EPYC CPU、AMD Solarflare 乙太網路配接器、Virtex FPGA 與 Alveo 加速卡等 AMD 高效能運算引擎，來為其資料中心基礎架構挹注效能，從而為超過 100 家交易所釋放高效能與高效率的交易。</li>
+</ul>
+</li>
+</ul>
+<h3>當前展望</h3>
+<p>AMD 展望陳述是根據當前預期，內容屬於前瞻性陳述，實際結果可能因市場狀況以及「免責聲明」章節所列的各項因素，以致和本文陳述有所出入。</p>
+<p>AMD 預期 2024 年第 3 季營收約為 67 億美元，上下波動 3 億美元。在營收範圍的中點，這表示年度增長約為 16%，季度增長約 15%。AMD 預期非 GAAP 毛利率約為 53.5%。</p>
+<h3>AMD 電話會議</h3>
+<p>AMD 於<a href="http://www.amd.com/" target="_blank" rel="noopener">官網</a>中<a href="http://ir.amd.com/" target="_blank" rel="noopener">投資者關係網頁</a>提供網路廣播，討論 2024 年第 2 季財務結果。</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://unikoshardware.com/2024/07/amd-2024-q2-financial-report-pr.html/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>櫻桃涼夏趣，MX BOARD 2.0S MX2A 蒼穹與夜鷹無線三模新品報到</title>
+		<link>https://unikoshardware.com/2024/07/cherry-aug-mx-board-2-0s-mx2a-pr.html</link>
+					<comments>https://unikoshardware.com/2024/07/cherry-aug-mx-board-2-0s-mx2a-pr.html#respond</comments>
+		
+		<dc:creator><![CDATA[Press Release]]></dc:creator>
+		<pubDate>Wed, 31 Jul 2024 10:55:04 +0000</pubDate>
+				<category><![CDATA[新聞稿]]></category>
+		<category><![CDATA[CHERRY]]></category>
+		<guid isPermaLink="false">https://unikoshardware.com/?p=150226</guid>
+
+					<description><![CDATA[Press Release 德國工藝鍵盤品牌 CHERRY 為櫻桃粉絲們推出最新促銷活動「櫻桃涼夏趣」，此次代 [&#8230;]]]></description>
+										<content:encoded><![CDATA[<div class="alert alert-info" style="text-align: center;"><strong>Press Release</strong></div>
+<p><a href="https://img.unikoshardware.com/wp-content/uploads/2024/07/Cherry-Aug-PR_07_31_2024.webp"><img decoding="async" class="aligncenter size-full wp-image-150227" src="https://img.unikoshardware.com/wp-content/uploads/2024/07/Cherry-Aug-PR_07_31_2024.webp" alt="櫻桃涼夏趣，MX BOARD 2.0S MX2A 蒼穹與夜鷹無線三模新品報到" width="1200" height="675" /></a></p>
+<p>德國工藝鍵盤品牌 CHERRY 為櫻桃粉絲們推出最新促銷活動「櫻桃涼夏趣」，此次代理商帶來新品 MX 2.0S MX2A 無線三模機械鍵盤：蒼穹 &amp; 夜鷹，除了配備最新 MX2A 軸體，還有低延遲與長效耐久的續航力，讓使用者更能應付各種需求。在 2024 年8/1 ~ 8/31 期間內，限量贈送無線滑鼠與電競滑鼠墊，買 1 送 2 讓粉絲一次擁有整套櫻桃信仰！</p>
+<p><span id="more-150226"></span></p>
+<h2><strong>CHERRY 櫻桃涼夏趣 MX2A 新品登場</strong></h2>
+<h3>MX 2.0S MX2A 無線三模機械鍵盤蒼穹 &amp; 夜鷹特色描述</h3>
+<div class="row clearfix">
+<div class="col-md-6">
+<p><a href="https://img.unikoshardware.com/wp-content/uploads/2024/07/MX2.0S-MX2A-WHITE.webp"><img decoding="async" class="aligncenter size-full wp-image-150228" src="https://img.unikoshardware.com/wp-content/uploads/2024/07/MX2.0S-MX2A-WHITE.webp" alt="" width="1000" height="1419" /></a></p>
+</div>
+<div class="col-md-6">
+<p><a href="https://img.unikoshardware.com/wp-content/uploads/2024/07/MX2.0S-MX2A-BLACK.webp"><img decoding="async" loading="lazy" class="aligncenter size-full wp-image-150229" src="https://img.unikoshardware.com/wp-content/uploads/2024/07/MX2.0S-MX2A-BLACK.webp" alt="" width="1000" height="1419" /></a></p>
+</div>
+</div>
+<p><strong>蒼穹版本顏色設計</strong></p>
+<ul>
+<li>紅白撞色鍵帽設計，配以白色機身，外觀明亮且清新，適合追求時尚和現代感的用戶。</li>
+</ul>
+<p><strong>夜鷹版本顏色設計</strong></p>
+<ul>
+<li>墨綠色機身搭配黑色鍵帽金色刻字，外觀低調且穩重，適合喜歡沉穩色調的使用者。</li>
+</ul>
+<p><strong>皆搭配最新 MX2A 軸體</strong></p>
+<ul>
+<li>配備 CHERRY MX2A 紅軸，提供線性手感，無段落感且按壓順暢，適合長時間打字和遊戲。</li>
+<li>配備 CHERRY MX2A 茶軸，段落感次之的，聲音適中，有點段落感，同時又不會太吵，較推薦新手第一次選擇機械式鍵盤使用。</li>
+</ul>
+<p><strong>主要特點</strong></p>
+<ul>
+<li>低延遲卻有超耐久電力 : 採用 MX2A 軸體與最新觸發晶片，讓反應速率 &lt;1ms 且電力超過 200 小時，使用者面對各種任務事半功倍。</li>
+<li>無線設計：採用藍牙和 2.4GHz 雙模無線連接，提供更多使用自由度，避免線纜纏繞的困擾。</li>
+<li>高耐久性：高品質的打磨鍵帽和 MX2A 機械軸體，保證長時間使用不磨損，按鍵壽命超過 1 億次。</li>
+<li>舒適度：可調節的支腳設計，適應不同角度的需求，提升使用舒適度​。</li>
+<li>USB 接收器收納巧思 : 鍵盤底部收納小空間，外出攜帶隨插即用更便利</li>
+<li>電源按鈕設計在鍵盤頂部，位置順手開關，且開關設計與鍵盤表面平行，減少玩家誤觸</li>
+<li>這兩個版本均採用 CHERRY MX2A 高品質機械軸體，並搭載最新的無線技術，適應不同用戶需求，無論是辦公日常使用還是專業遊戲，都能提供優秀的體驗。</li>
+</ul>
+<p><a href="https://img.unikoshardware.com/wp-content/uploads/2024/07/MX2.0S-MX2A.webp"><img decoding="async" loading="lazy" class="aligncenter size-full wp-image-150235" src="https://img.unikoshardware.com/wp-content/uploads/2024/07/MX2.0S-MX2A.webp" alt="" width="877" height="1500" /></a></p>
+<p>詳細規格資訊請參考官網的<a href="https://www.j-power.com.tw/h/Product?key=vmhbs&amp;cateId=7777#productlist" target="_blank" rel="noopener">產品頁面</a>。</p>
+<p>除了無線親民款的 MX 2.0S 蒼穹 / 夜鷹版本，也還有 MX 3.0S MX2A 與一代軸的優惠促銷活動，MX2A 靜音紅軸與玉軸竟然只要 NT$ 2,290 (原價 NT$ 2,890)，長青款的 MX 版本NT$ 2,090 (原價 NT$ 2,490)，暑假就是要買 CHERRY Xtrfy 電競鍵盤！！</p>
+<h3>CHERRY MX 3.0S MX2A 軸 / MX 軸優惠</h3>
+<p>MX 3.0S MX2A 軸 / MX 軸促銷活動表如下，活動期間 : 2024 年 8/1 ~ 8 月底 (杰強國際有權更改活動促銷內容)：</p>
+<p><a href="https://img.unikoshardware.com/wp-content/uploads/2024/07/List.webp"><img decoding="async" loading="lazy" class="aligncenter size-full wp-image-150230" src="https://img.unikoshardware.com/wp-content/uploads/2024/07/List.webp" alt="" width="1161" height="298" /></a></p>
+<p><a href="https://img.unikoshardware.com/wp-content/uploads/2024/07/Cherry-2024-Aug-EDM.webp"><img decoding="async" loading="lazy" class="aligncenter size-full wp-image-150231" src="https://img.unikoshardware.com/wp-content/uploads/2024/07/Cherry-2024-Aug-EDM.webp" alt="" width="1500" height="1435" /></a></p>
+<p><strong>專屬經銷商賣場連結</strong></p>
+<p>現在馬上前往以下經銷商入手最優質的 CHERRY 鍵盤吧！</p>
+<ul>
+<li><a href="https://shopee.tw/mall/search?keyword=cherry%E6%AB%BB%E6%A1%83&amp;shop=54133273" target="_blank" rel="noopener">原價屋 Coolp</a></li>
+<li><a href="https://www.eclife.com.tw/keyboard/0703270006/2205160002/2205120014/" target="_blank" rel="noopener">良興電子</a></li>
+<li><a href="http://www.b18.com.tw/Shop/" target="_blank" rel="noopener">總騏科技</a></li>
+<li><a href="https://shopee.tw/x3232111?categoryId=69&amp;itemId=1618469187" target="_blank" rel="noopener">德總電腦</a></li>
+<li><a href="https://www.inpad.com.tw/product.php?act=list&amp;cid=439" target="_blank" rel="noopener">硬派精璽</a></li>
+<li><a href="https://www.pcparty.com.tw/" target="_blank" rel="noopener">PCPARTY</a></li>
+<li><a href="https://shopee.tw/shop/16925503/search/?shopCollection=107299242" target="_blank" rel="noopener">易飛電腦</a></li>
+<li><a href="https://24h.pchome.com.tw/store/DCAHEL" target="_blank" rel="noopener">PCHOME</a></li>
+<li><a href="https://shopee.tw/shop/2388054/search?page=0&amp;shopCollection=109126198" target="_blank" rel="noopener">一統電競</a></li>
+<li><a href="https://www.jpb.com.tw/" target="_blank" rel="noopener">日本橋</a></li>
+<li><a href="http://www.deyuan-pc.com.tw/evaluate/" target="_blank" rel="noopener">德源</a></li>
+<li><a href="https://shopee.tw/ustar.3c?categoryId=100636&amp;entryPoint=ShopByPDP&amp;itemId=4446317987" target="_blank" rel="noopener">宇星</a></li>
+<li><a href="https://www.domedo.com.tw/" target="_blank" rel="noopener">昕翌</a></li>
+<li><a href="https://www.sinya.com.tw/diy" target="_blank" rel="noopener">欣亞</a></li>
+<li><a href="https://www.ruten.com.tw/store/taichi072355099" target="_blank" rel="noopener">太極</a></li>
+<li><a href="http://www.junty.com.tw/" target="_blank" rel="noopener">駿太</a></li>
+</ul>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://unikoshardware.com/2024/07/cherry-aug-mx-board-2-0s-mx2a-pr.html/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>MSI x Rhinoshield 跨界合作！入手指定 MSI 品項送犀牛盾手機殼折扣券</title>
+		<link>https://unikoshardware.com/2024/07/msi-x-rhinoshield-sp-event-pr.html</link>
+					<comments>https://unikoshardware.com/2024/07/msi-x-rhinoshield-sp-event-pr.html#respond</comments>
+		
+		<dc:creator><![CDATA[Dayking]]></dc:creator>
+		<pubDate>Wed, 31 Jul 2024 09:04:24 +0000</pubDate>
+				<category><![CDATA[新聞]]></category>
+		<category><![CDATA[News 新聞]]></category>
+		<category><![CDATA[MSI]]></category>
+		<guid isPermaLink="false">https://unikoshardware.com/?p=150212</guid>
+
+					<description><![CDATA[MSI 龍粉現在有了在手機週邊上展現信仰的機會囉！微星宣布與手機保護殼品牌 Rhinoshield 犀牛盾合作 [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><img decoding="async" loading="lazy" class="aligncenter size-full wp-image-150213" src="https://img.unikoshardware.com/wp-content/uploads/2024/07/MSIxRhinoshield-PR_07_31_2024.webp" alt="MSI x Rhinoshield 跨界合作！入手指定 MSI 品項送犀牛盾手機殼折扣券" width="1200" height="675" /></p>
+<p>MSI 龍粉現在有了在手機週邊上展現信仰的機會囉！微星宣布與手機保護殼品牌 Rhinoshield 犀牛盾合作，推出 MSI x Rhinoshield 客製款手機保護殼。只要於 2024 年 8/1 起至 9/30 的期間內，購買指定款 MSI 機殼、電源、水冷產品，至微星網站註冊登錄並經過審核後，就能獲得獨家 NT$ 500 折扣券，讓龍粉能以超實惠價格入手信仰手機保護殼。</p>
+<p><span id="more-150212"></span></p>
+<h2><strong>MSI x Rhinoshield 攜手推出客製版手機保護殼</strong></h2>
+<p><strong>活動指定 MSI 產品型號：</strong></p>
+<div class="wptb-table-container wptb-table-150217"><div class="wptb-table-container-matrix" id="wptb-table-id-150217" data-wptb-version="1.5.0" data-wptb-pro-status="false"><table class="wptb-preview-table wptb-element-main-table_setting-150217" data-wptb-adaptive-table="0" data-wptb-cells-width-auto-count="3" data-wptb-table-tds-sum-max-width="396.40000000000003" style="border-style: solid; border-width: 3px; border-color: rgb(0, 0, 0);" data-table-columns="3" data-reconstraction="1" data-wptb-horizontal-scroll-status="false" data-wptb-extra-styles="LyogRW50ZXIgeW91ciBjdXN0b20gQ1NTIHJ1bGVzIGhlcmUgKi8=" role="table" data-wptb-header-background-color="#FFFFFFFF" data-wptb-even-row-background-color="#FFFFFFFF" data-wptb-odd-row-background-color="#FFFFFFFF"><tbody><tr class="wptb-row" style="background-color: rgb(255, 255, 255);"><td class="wptb-cell" data-wptb-css-td-auto-width="true" data-x-index="0" data-y-index="0" style="padding: 15px; border-style: solid; border-width: 1px; border-color: rgb(0, 0, 0);"><div class="wptb-text-container wptb-ph-element wptb-element-text-1" style="color: rgb(0, 0, 0); font-size: 15px;"><div class="" style="position: relative;"><p class="wp-exclude-emoji"><strong>&#27231;&#27580;</strong></p></div></div></td><td class="wptb-cell" data-wptb-css-td-auto-width="true" data-x-index="1" data-y-index="0" style="padding: 15px; border-style: solid; border-width: 1px; border-color: rgb(0, 0, 0);"><div class="wptb-text-container wptb-ph-element wptb-element-text-2" style="color: rgb(0, 0, 0); font-size: 15px;"><div class="" style="position: relative;"><p class="wp-exclude-emoji"><strong>&#38651;&#28304;&#20379;&#25033;&#22120;</strong></p></div></div></td><td class="wptb-cell" data-wptb-css-td-auto-width="true" data-x-index="2" data-y-index="0" style="padding: 15px; border-style: solid; border-width: 1px; border-color: rgb(0, 0, 0);"><div class="wptb-text-container wptb-ph-element wptb-element-text-3" style="color: rgb(0, 0, 0); font-size: 15px;"><div class="" style="position: relative;"><p class="wp-exclude-emoji"><strong>&#19968;&#39636;&#24335;&#27700;&#20919;</strong></p></div></div></td></tr><tr class="wptb-row" style="--hover-bg-color: undefined; background-color: rgb(255, 255, 255);"><td class="wptb-cell" data-wptb-css-td-auto-width="true" data-x-index="0" data-y-index="1" style="padding: 15px; border-style: solid; border-width: 1px; border-color: rgb(0, 0, 0);"><div class="wptb-text-container wptb-ph-element wptb-element-text-4" style="color: rgb(0, 0, 0); font-size: 15px;"><div class="" style="position: relative;"><p class="wp-exclude-emoji">MEG PROSPECT 700R</p></div></div></td><td class="wptb-cell" data-wptb-css-td-auto-width="true" data-x-index="1" data-y-index="1" style="padding: 15px; border-style: solid; border-width: 1px; border-color: rgb(0, 0, 0);"><div class="wptb-text-container wptb-ph-element wptb-element-text-5" style="color: rgb(0, 0, 0); font-size: 15px;"><div class="" style="position: relative;"><p class="wp-exclude-emoji">MEG Ai1300P PCIE5</p></div></div></td><td class="wptb-cell" data-wptb-css-td-auto-width="true" data-x-index="2" data-y-index="1" style="padding: 15px; border-style: solid; border-width: 1px; border-color: rgb(0, 0, 0);"><div class="wptb-text-container wptb-ph-element wptb-element-text-6" style="color: rgb(0, 0, 0); font-size: 15px;"><div class="" style="position: relative;"><p class="wp-exclude-emoji">MEG CORELIQUID S360</p></div></div></td></tr><tr class="wptb-row" style="--hover-bg-color: undefined; background-color: rgb(255, 255, 255);"><td class="wptb-cell" data-wptb-css-td-auto-width="true" data-x-index="0" data-y-index="2" style="padding: 15px; border-style: solid; border-width: 1px; border-color: rgb(0, 0, 0);"><div class="wptb-text-container wptb-ph-element wptb-element-text-7" style="color: rgb(0, 0, 0); font-size: 15px;"><div class="" style="position: relative;"><p class="wp-exclude-emoji">MPG GUNGNIR 300R AIRFLOW</p></div></div></td><td class="wptb-cell" data-wptb-css-td-auto-width="true" data-x-index="1" data-y-index="2" style="padding: 15px; border-style: solid; border-width: 1px; border-color: rgb(0, 0, 0);"><div class="wptb-text-container wptb-ph-element wptb-element-text-8" style="color: rgb(0, 0, 0); font-size: 15px;"><div class="" style="position: relative;"><p class="wp-exclude-emoji">MPG A1000G PCIE5</p></div></div></td><td class="wptb-cell" data-wptb-css-td-auto-width="true" data-x-index="2" data-y-index="2" style="padding: 15px; border-style: solid; border-width: 1px; border-color: rgb(0, 0, 0);"><div class="wptb-text-container wptb-ph-element wptb-element-text-9" style="color: rgb(0, 0, 0); font-size: 15px;"><div class="" style="position: relative;"><p class="wp-exclude-emoji">MPG CORELIQUID D360</p></div></div></td></tr><tr class="wptb-row" style="--hover-bg-color: undefined; background-color: rgb(255, 255, 255);"><td class="wptb-cell" data-wptb-css-td-auto-width="true" data-x-index="0" data-y-index="3" style="padding: 15px; border-style: solid; border-width: 1px; border-color: rgb(0, 0, 0);"><div class="wptb-text-container wptb-ph-element wptb-element-text-10" style="color: rgb(0, 0, 0); font-size: 15px;"><div class="" style="position: relative;"><p class="wp-exclude-emoji">MPG GUNGNIR 300R AIRFLOW WHITE</p></div></div></td><td class="wptb-cell" data-wptb-css-td-auto-width="true" data-x-index="1" data-y-index="3" style="padding: 15px; border-style: solid; border-width: 1px; border-color: rgb(0, 0, 0);"><div class="wptb-text-container wptb-ph-element wptb-element-text-11" style="color: rgb(0, 0, 0); font-size: 15px;"><div class=""><p class="wp-exclude-emoji">MPG A850G PCIE5</p></div></div></td><td class="wptb-cell" data-wptb-css-td-auto-width="true" data-x-index="2" data-y-index="3" style="padding: 15px; border-style: solid; border-width: 1px; border-color: rgb(0, 0, 0);"><div class="wptb-text-container wptb-ph-element wptb-element-text-12" style="color: rgb(0, 0, 0); font-size: 15px;"><div class="" style="position: relative;"><p class="wp-exclude-emoji">MPG CORELIQUID D240</p></div></div></td></tr><tr class="wptb-row" style="--hover-bg-color: undefined; background-color: rgb(255, 255, 255);"><td class="wptb-cell" data-wptb-css-td-auto-width="true" data-x-index="0" data-y-index="4" style="padding: 15px; border-style: solid; border-width: 1px; border-color: rgb(0, 0, 0);"><div class="wptb-text-container wptb-ph-element wptb-element-text-13" style="color: rgb(0, 0, 0); font-size: 15px;"><div class="" style="position: relative;"><p class="wp-exclude-emoji">MPG GUNGNIR 300P AIRFLOW</p></div></div></td><td class="wptb-cell" data-wptb-css-td-auto-width="true" data-x-index="1" data-y-index="4" style="padding: 15px; border-style: solid; border-width: 1px; border-color: rgb(0, 0, 0);"><div class="wptb-text-container wptb-ph-element wptb-element-text-14" style="color: rgb(0, 0, 0); font-size: 15px;"><div class=""><p class="wp-exclude-emoji">MAG A1250GL PCIE5</p></div></div></td><td class="wptb-cell" data-wptb-css-td-auto-width="true" data-x-index="2" data-y-index="4" style="padding: 15px; border-style: solid; border-width: 1px; border-color: rgb(0, 0, 0);"><div class="wptb-text-container wptb-ph-element wptb-element-text-15" style="color: rgb(0, 0, 0); font-size: 15px;"><div class="" style="position: relative;"><p class="wp-exclude-emoji">MAG CORELIQUID E360</p></div></div></td></tr><tr class="wptb-row" style="--hover-bg-color: undefined; background-color: rgb(255, 255, 255);"><td class="wptb-cell" data-wptb-css-td-auto-width="true" data-x-index="0" data-y-index="5" style="padding: 15px; border-style: solid; border-width: 1px; border-color: rgb(0, 0, 0);"><div class="wptb-text-container wptb-ph-element wptb-element-text-16" style="color: rgb(0, 0, 0); font-size: 15px;"><div class="" style="position: relative;"><p class="wp-exclude-emoji">MPG GUNGNIR 110R</p></div></div></td><td class="wptb-cell" data-wptb-css-td-auto-width="true" data-x-index="1" data-y-index="5" style="padding: 15px; border-style: solid; border-width: 1px; border-color: rgb(0, 0, 0);"><div class="wptb-text-container wptb-ph-element wptb-element-text-17" style="color: rgb(0, 0, 0); font-size: 15px;"><div class="" style="position: relative;"><p class="wp-exclude-emoji">MAG A1000GL PCIE5</p></div></div></td><td class="wptb-cell" data-wptb-css-td-auto-width="true" data-x-index="2" data-y-index="5" style="padding: 15px; border-style: solid; border-width: 1px; border-color: rgb(0, 0, 0);"><div class="wptb-text-container wptb-ph-element wptb-element-text-18" style="color: rgb(0, 0, 0); font-size: 15px;"><div class="" style="position: relative;"><p class="wp-exclude-emoji">MAG CORELIQUID E360 WHITE</p></div></div></td></tr><tr class="wptb-row" style="--hover-bg-color: undefined; background-color: rgb(255, 255, 255);"><td class="wptb-cell" data-wptb-css-td-auto-width="true" data-x-index="0" data-y-index="6" style="padding: 15px; border-style: solid; border-width: 1px; border-color: rgb(0, 0, 0);"><div class="wptb-text-container wptb-ph-element wptb-element-text-19" style="color: rgb(0, 0, 0); font-size: 15px;"><div class="" style="position: relative;"><p class="wp-exclude-emoji">MPG GUNGNIR 110R WHITE</p></div></div></td><td class="wptb-cell" data-wptb-css-td-auto-width="true" data-x-index="1" data-y-index="6" style="padding: 15px; border-style: solid; border-width: 1px; border-color: rgb(0, 0, 0);"><div class="wptb-text-container wptb-ph-element wptb-element-text-20" style="color: rgb(0, 0, 0); font-size: 15px;"><div class="" style="position: relative;"><p class="wp-exclude-emoji">MAG A850GL PCIE5</p></div></div></td><td class="wptb-cell" data-wptb-css-td-auto-width="true" data-x-index="2" data-y-index="6" style="padding: 15px; border-style: solid; border-width: 1px; border-color: rgb(0, 0, 0);"><div class="wptb-text-container wptb-ph-element wptb-element-text-21" style="color: rgb(0, 0, 0); font-size: 15px;"><div class="" style="position: relative;"><p class="wp-exclude-emoji">MAG CORELIQUID E240</p></div></div></td></tr><tr class="wptb-row" style="--hover-bg-color: undefined; background-color: rgb(255, 255, 255);"><td class="wptb-cell" data-wptb-css-td-auto-width="true" data-x-index="0" data-y-index="7" style="padding: 15px; border-style: solid; border-width: 1px; border-color: rgb(0, 0, 0);"><div class="wptb-text-container wptb-ph-element wptb-element-text-22" style="color: rgb(0, 0, 0); font-size: 15px;"><div class="" style="position: relative;"><p class="wp-exclude-emoji">MAG PANO 100R PZ WHITE</p></div></div></td><td class="wptb-cell" data-wptb-css-td-auto-width="true" data-x-index="1" data-y-index="7" style="padding: 15px; border-style: solid; border-width: 1px; border-color: rgb(0, 0, 0);"><div class="wptb-text-container wptb-ph-element wptb-element-text-23" style="color: rgb(0, 0, 0); font-size: 15px;"><div class="" style="position: relative;"><p class="wp-exclude-emoji">MAG A850GL PCIE5 WHITE</p></div></div></td><td class="wptb-cell" data-wptb-css-td-auto-width="true" data-x-index="2" data-y-index="7" style="padding: 15px; border-style: solid; border-width: 1px; border-color: rgb(0, 0, 0);"><div class="wptb-text-container wptb-ph-element wptb-element-text-24" style="color: rgb(0, 0, 0); font-size: 15px;"><div class="" style="position: relative;"><p class="wp-exclude-emoji">MAG CORELIQUID E240 WHITE</p></div></div></td></tr><tr class="wptb-row" style="--hover-bg-color: undefined; background-color: rgb(255, 255, 255);"><td class="wptb-cell" data-wptb-css-td-auto-width="true" data-x-index="0" data-y-index="8" style="padding: 15px; border-style: solid; border-width: 1px; border-color: rgb(0, 0, 0);"><div class="wptb-text-container wptb-ph-element wptb-element-text-25" style="color: rgb(0, 0, 0); font-size: 15px;"><div class="" style="position: relative;"><p class="wp-exclude-emoji">MAG PANO 100R PZ</p></div></div></td><td class="wptb-cell" data-wptb-css-td-auto-width="true" data-x-index="1" data-y-index="8" style="padding: 15px; border-style: solid; border-width: 1px; border-color: rgb(0, 0, 0);"><div class="wptb-text-container wptb-ph-element wptb-element-text-26" style="color: rgb(0, 0, 0); font-size: 15px;"><div class="" style="position: relative;"><p class="wp-exclude-emoji">MAG A750GL PCIE5</p></div></div></td><td class="wptb-cell" data-wptb-css-td-auto-width="true" data-x-index="2" data-y-index="8" style="padding: 15px; border-style: solid; border-width: 1px; border-color: rgb(0, 0, 0);"><div class="wptb-text-container wptb-ph-element wptb-element-text-27" style="color: rgb(0, 0, 0); font-size: 15px;"><div class="" style="position: relative;"><p class="wp-exclude-emoji">MAG CORELIQUID M360</p></div></div></td></tr><tr class="wptb-row" style="--hover-bg-color: undefined; background-color: rgb(255, 255, 255);"><td class="wptb-cell" data-wptb-css-td-auto-width="true" data-x-index="0" data-y-index="9" style="padding: 15px; border-style: solid; border-width: 1px; border-color: rgb(0, 0, 0);"><div class="wptb-text-container wptb-ph-element wptb-element-text-28" style="color: rgb(0, 0, 0); font-size: 15px;"><div class="" style="position: relative;"><p class="wp-exclude-emoji">MAG PANO M100R PZ WHITE</p></div></div></td><td class="wptb-cell" data-wptb-css-td-auto-width="true" data-x-index="1" data-y-index="9" style="padding: 15px; border-style: solid; border-width: 1px; border-color: rgb(0, 0, 0);"></td><td class="wptb-cell" data-wptb-css-td-auto-width="true" data-x-index="2" data-y-index="9" style="padding: 15px; border-style: solid; border-width: 1px; border-color: rgb(0, 0, 0);"><div class="wptb-text-container wptb-ph-element wptb-element-text-29" style="color: rgb(0, 0, 0); font-size: 15px;"><div class="" style="position: relative;"><p class="wp-exclude-emoji">MAG CORELIQUID M240</p></div></div></td></tr><tr class="wptb-row" style="--hover-bg-color: undefined; background-color: rgb(255, 255, 255);"><td class="wptb-cell" data-wptb-css-td-auto-width="true" data-x-index="0" data-y-index="10" style="padding: 15px; border-style: solid; border-width: 1px; border-color: rgb(0, 0, 0);"><div class="wptb-text-container wptb-ph-element wptb-element-text-30" style="color: rgb(0, 0, 0); font-size: 15px;"><div class="" style="position: relative;"><p class="wp-exclude-emoji">MAG PANO M100R PZ</p></div></div></td><td class="wptb-cell" data-wptb-css-td-auto-width="true" data-x-index="1" data-y-index="10" style="padding: 15px; border-style: solid; border-width: 1px; border-color: rgb(0, 0, 0);"></td><td class="wptb-cell" data-wptb-css-td-auto-width="true" data-x-index="2" data-y-index="10" style="padding: 15px; border-style: solid; border-width: 1px; border-color: rgb(0, 0, 0);"><div class="wptb-text-container wptb-ph-element wptb-element-text-31" style="color: rgb(0, 0, 0); font-size: 15px;"><div class="" style="position: relative;"><p class="wp-exclude-emoji"><br></p></div></div></td></tr></tbody></table></div></div>
+
+<p><strong>折扣券適用品項：</strong></p>
+<p>獨家折扣券適用於下列圖款所搭配的 RHINOSHIELD 犀牛盾：「SolidSuit 經典防摔手機殼」、「Clear 抗黃化透明防摔手機殼」、「JellyTint 半透明有色防摔手機殼」<br />
+及「Mod NX 邊框背蓋兩用防摔手機殼」系列產品，適用手機型號及顏色以<a href="https://my.rhinoshield.tw/artist/@msi?artwork_type=Collage&amp;device=iphone-15&amp;device_color=%23AEE1CD&amp;product=solidsuit-tpe&amp;product_color=%23000000" target="_blank" rel="noopener">犀牛盾官網</a>為準。</p>
+<p><a href="https://img.unikoshardware.com/wp-content/uploads/2024/07/MSIxRhinoshield-1_07_31_2024.webp"><img decoding="async" loading="lazy" class="aligncenter size-full wp-image-150218" src="https://img.unikoshardware.com/wp-content/uploads/2024/07/MSIxRhinoshield-1_07_31_2024.webp" alt="" width="1500" height="564" /></a> <a href="https://img.unikoshardware.com/wp-content/uploads/2024/07/MSIxRhinoshield-2_07_31_2024.webp"><img decoding="async" loading="lazy" class="aligncenter size-full wp-image-150219" src="https://img.unikoshardware.com/wp-content/uploads/2024/07/MSIxRhinoshield-2_07_31_2024.webp" alt="" width="1500" height="564" /></a></p>
+<p>活動期間自 2024/8/1 起至 2024/9/30 止，若贈品提前送完，活動隨即結束。上傳之購買發票必須於活動期間內開立，申請才有效，更多活動辦法請參閱<a href="https://tw.msi.com/Promotion/MSIxRhinoshield" target="_blank" rel="noopener">微星官方網站</a>。</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://unikoshardware.com/2024/07/msi-x-rhinoshield-sp-event-pr.html/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>2024 全漢夏日電競狂降套餐即刻下殺，現買現省最優惠</title>
+		<link>https://unikoshardware.com/2024/07/2024-fsp-power-case-sp-event-pr.html</link>
+					<comments>https://unikoshardware.com/2024/07/2024-fsp-power-case-sp-event-pr.html#respond</comments>
+		
+		<dc:creator><![CDATA[Press Release]]></dc:creator>
+		<pubDate>Wed, 31 Jul 2024 06:58:51 +0000</pubDate>
+				<category><![CDATA[新聞稿]]></category>
+		<category><![CDATA[FSP]]></category>
+		<guid isPermaLink="false">https://unikoshardware.com/?p=150206</guid>
+
+					<description><![CDATA[Press Release FSP 全漢企業於今年暑假檔期推出夏日電競狂降電源機殼套餐，有平價實惠的熱銷款聖武 [&#8230;]]]></description>
+										<content:encoded><![CDATA[<div class="alert alert-info" style="text-align: center;"><strong>Press Release</strong></div>
+<p><img decoding="async" loading="lazy" class="aligncenter size-full wp-image-150207" src="https://img.unikoshardware.com/wp-content/uploads/2024/07/FSP-PR_07_31_2024.webp" alt="2024 全漢夏日電競狂降套餐超優惠，最高可省 NT$ 890" width="1200" height="675" /></p>
+<p><a href="https://www.fsp-group.com/tw/index.html" target="_blank" rel="noopener">FSP</a> 全漢企業於今年暑假檔期推出夏日電競狂降電源機殼套餐，有平價實惠的熱銷款聖武士 550W 搭配 CMT211B，或是進階電競首選的 CMT580 與 VITA GM 650W 組合，乃至專為高階 AI 玩家所設計的 CUT593 及 VITA GM 850W 組合，通通都有意想不到的優惠方案，現在就馬上前往各大經銷門市指定選購，馬上買便宜！</p>
+<p><span id="more-150206"></span></p>
+<h2><strong>全漢夏日電競狂降套餐火熱開賣</strong></h2>
+<p><strong>套餐內容：全漢聖武士 550W 搭配全漢 CMT211B 機殼</strong></p>
+<p>攻佔數年之久的入門裝機首選「聖武士」，憑藉平價實惠且穩定架構之姿，深受許多玩家裝機喜愛，本次活動特別選用聖武士 550W 讓有需求選購安裝顯示卡的玩家朋友可以不受限於小瓦數配置，同時搭配性價比極高的 FSP CMT211B 電腦機殼，兼顧散熱性能以及能與主板搭配出多種燈光效果，讓平價組合享有更多可玩性的視覺饗宴。</p>
+<p><a href="https://img.unikoshardware.com/wp-content/uploads/2024/07/image3_07_31_2024.webp"><img decoding="async" loading="lazy" class="aligncenter size-full wp-image-150208" src="https://img.unikoshardware.com/wp-content/uploads/2024/07/image3_07_31_2024.webp" alt="" width="1000" height="1000" srcset="https://img.unikoshardware.com/wp-content/uploads/2024/07/image3_07_31_2024.webp 1000w, https://img.unikoshardware.com/wp-content/uploads/2024/07/image3_07_31_2024-350x350.webp 350w" sizes="(max-width: 1000px) 100vw, 1000px" /></a><br />
+<strong>套餐內容：全漢 VITA GM 650W 搭配全漢 CMT580B / CMT580W 機殼</strong></p>
+<p>全新上市全模組線材設計的「VITA GM」系列，通過 80 Plus 金牌認證，使用玩家推崇的 LLC 諧振線路與 DC-DC 電路架構電力穩定輸出，以及支援最新 Intel ATX 3.1 電源設計規範，全面採用扁平線材設計，嚴選空間寬敞且為散熱而生、採用大垂直風道的 CMT580B/W，使玩家在裝機整線規劃更為簡單，黑白雙色簡約外型，優惠套餐組合任君選購。</p>
+<p><a href="https://img.unikoshardware.com/wp-content/uploads/2024/07/image2_07_31_2024.webp"><img decoding="async" loading="lazy" class="aligncenter size-full wp-image-150209" src="https://img.unikoshardware.com/wp-content/uploads/2024/07/image2_07_31_2024.webp" alt="" width="1000" height="1000" srcset="https://img.unikoshardware.com/wp-content/uploads/2024/07/image2_07_31_2024.webp 1000w, https://img.unikoshardware.com/wp-content/uploads/2024/07/image2_07_31_2024-350x350.webp 350w" sizes="(max-width: 1000px) 100vw, 1000px" /></a><br />
+<strong>套餐內容：全漢 VITA GM 850W 搭配全漢 CUT593B / CUT593W 機殼</strong></p>
+<p>專為高階AI 玩家所規劃的頂規套餐，全新上市全模組線材設計的「VITA GM」系列，擁有許多諸多主流架構規格特色，不論在電競遊戲或是 AI 運算上，全漢「VITA GM 850W」可輕鬆支援 NVIDIA RTX4080系列等級以上的顯示卡型號，提供穩定可靠且源源不絕的電力輸出; 同時去年一上市就轟動國內的 「FSP CUT593」，裝機流程與理線空間設計上有了跨時代的突破，內建前 3 後 1 的 140 mm ARGB 風扇配置讓散熱表現也不容小覷，可支援 AIO 360 水冷系統以實現最大冷卻性能，黑白雙色高顏值，選黑選白都超值。</p>
+<p><a href="https://img.unikoshardware.com/wp-content/uploads/2024/07/image4_07_31_2024.webp"><img decoding="async" loading="lazy" class="aligncenter size-full wp-image-150210" src="https://img.unikoshardware.com/wp-content/uploads/2024/07/image4_07_31_2024.webp" alt="" width="1000" height="1000" srcset="https://img.unikoshardware.com/wp-content/uploads/2024/07/image4_07_31_2024.webp 1000w, https://img.unikoshardware.com/wp-content/uploads/2024/07/image4_07_31_2024-350x350.webp 350w" sizes="(max-width: 1000px) 100vw, 1000px" /></a></p>
+<p>即日起於全台原價屋、欣亞數位等全台通路熱烈開賣中！電商平台另有優惠方案供選購，敬請見諒。</p>
+<p><strong>電源供應器</strong></p>
+<ul>
+<li><a href="https://www.superchannel.com.tw/products/detail/1674" target="_blank" rel="noopener">全漢 聖武士 550W</a></li>
+<li><a href="https://www.superchannel.com.tw/products/detail/2228" target="_blank" rel="noopener">全漢 VITA GM 650W</a></li>
+<li><a href="https://www.superchannel.com.tw/products/detail/2230" target="_blank" rel="noopener">全漢 VITA GM 850W</a></li>
+</ul>
+<p><strong>電腦機殼</strong></p>
+<ul>
+<li><a href="https://www.superchannel.com.tw/products/detail/1813" target="_blank" rel="noopener">全漢 CMT211B</a></li>
+<li><a href="https://www.superchannel.com.tw/products/detail/2011" target="_blank" rel="noopener">全漢 CMT580(B)</a></li>
+<li><a href="https://www.superchannel.com.tw/products/detail/2012" target="_blank" rel="noopener">全漢 CMT580(W)</a></li>
+<li><a href="https://www.superchannel.com.tw/products/detail/2174" target="_blank" rel="noopener">全漢 CUT593(B)</a></li>
+<li><a href="https://www.superchannel.com.tw/products/detail/2175" target="_blank" rel="noopener">全漢 CUT593(W)</a></li>
+</ul>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://unikoshardware.com/2024/07/2024-fsp-power-case-sp-event-pr.html/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Intel Core Ultra 200V Lunar Lake 處理器預定於 9 月 3 日發布</title>
+		<link>https://unikoshardware.com/2024/07/intel-core-ultra-200v-september-3rd.html</link>
+					<comments>https://unikoshardware.com/2024/07/intel-core-ultra-200v-september-3rd.html#respond</comments>
+		
+		<dc:creator><![CDATA[JC]]></dc:creator>
+		<pubDate>Wed, 31 Jul 2024 06:32:47 +0000</pubDate>
+				<category><![CDATA[新聞]]></category>
+		<category><![CDATA[Intel]]></category>
+		<category><![CDATA[News 新聞]]></category>
+		<guid isPermaLink="false">https://unikoshardware.com/?p=150188</guid>
+
+					<description><![CDATA[Intel 宣布新一代 Core Ultra 200V "Lunar Lake" 處理器將於 9 月 3 日發 [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><img decoding="async" loading="lazy" class="aligncenter wp-image-150190 size-full" src="https://img.unikoshardware.com/wp-content/uploads/2024/07/INTEL-CORE-ULTRA-200V-LUNAR-LAKE.webp" alt="Intel Core Ultra 200V Lunar Lake 處理器預定於 9 月 3 日發布" width="1280" height="720" /></p>
+<p>Intel 宣布新一代 Core Ultra 200V "Lunar Lake" 處理器將於 9 月 3 日發布。新系列採用突破性架構，提供卓越效能、強大 AI 運算能力和集成記憶體。</p>
+<p><span id="more-150188"></span></p>
+<h2 class="font-600 text-2xl font-bold">Core Ultra 200V Lunar Lake 即將發布</h2>
+<p class="whitespace-pre-wrap break-words">Intel 宣布其新一代 Core Ultra 系列處理器，代號 Lunar Lake，將於 2024 年 9 月 3 日，在德國柏林 IFA 展前夕正式發布。這一消息印證了 Intel 此前承諾在本季推出新款移動處理器的計劃。</p>
+<p class="whitespace-pre-wrap break-words">Intel 客戶運算事業部執行副總裁兼總經理 Michelle Johnston Holthaus 和客戶業務部高級副總裁兼總經理 Jim Johnson 將主持此次線上發布會。他們將詳細介紹新處理器的諸多創新特性，包含突破性的 x86 功耗效率、卓越核心性能、顯著提升的圖形處理能力以及 AI 運算能力。</p>
+<p class="whitespace-pre-wrap break-words">新系列將推出多達 9 款型號，但其配置相當相似，其中的核心配置為 8 核心 (4 個 Lion Cove + 4 個 Skymont)、GPU 最多 8 個核心，顯示方面將是首次採用 Xe2-LPG 系列，這也是 Battlemage 架構的低功耗衍生版。記憶體部分為封裝內集成 LPDDR5X，提供 16GB 或 32GB 選項。搭載新一代 NPU4 AI 加速單元，獨立提供 48 TOPS 的 AI 性能。</p>
+<p class="whitespace-pre-wrap break-words">值得注意的是，Xe2-LPG 是 Battlemage 架構的首次亮相，代表 9 月 3 日也可能是 Xe2 顯示架構的發布日期。</p>
+<p class="whitespace-pre-wrap break-words">隨著發布日期的臨近，可以期待更多關於這款處理器的細節資訊。Intel 也確認將在其官方網站上進行直播，為全球科技愛好者帶來第一手的產品消息。</p>
+<p class="whitespace-pre-wrap break-words"><a href="https://videocardz.com/newz/intel-core-ultra-200v-lunar-lake-launches-september-3rd" target="_blank" rel="noopener">消息來源</a></p>
+<p><span style="color: #0000ff;">延伸閱讀</span></p>
+<p><a href="https://unikoshardware.com/2024/06/intel-core-ultra-7-268v-geekbench.html">Intel Lunar Lake 系列 Core Ultra 7 268V 處理器效能首度現身 Geekbench</a></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://unikoshardware.com/2024/07/intel-core-ultra-200v-september-3rd.html/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>[限時免費] Winxvideo AI V2.0 – 透過 AI 技術增強影片畫質</title>
+		<link>https://unikoshardware.com/2024/07/giveaway-winxvideo-ai-v20-18th.html</link>
+					<comments>https://unikoshardware.com/2024/07/giveaway-winxvideo-ai-v20-18th.html#respond</comments>
+		
+		<dc:creator><![CDATA[Dayking]]></dc:creator>
+		<pubDate>Tue, 30 Jul 2024 09:54:12 +0000</pubDate>
+				<category><![CDATA[軟體]]></category>
+		<category><![CDATA[限時免費]]></category>
+		<category><![CDATA[AI]]></category>
+		<guid isPermaLink="false">https://unikoshardware.com/?p=150082</guid>
+
+					<description><![CDATA[Winxvideo AI 是一款由 AI 驅動的頂級影片工具包，不論是老舊、低畫質、雜訊或模糊的影片 / 圖像 [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><img decoding="async" loading="lazy" class="aligncenter wp-image-150083 size-full" src="https://img.unikoshardware.com/wp-content/uploads/2024/07/Winxvideo-AI_07_30_2024.webp" alt="[限時免費] Winxvideo AI V2.0 - 透過 AI 技術增強影片畫質" width="1200" height="675" /></p>
+<p><a href="https://www.winxdvd.com/zh/winxvideo-ai/" target="_blank" rel="noopener">Winxvideo AI</a> 是一款由 AI 驅動的頂級影片工具包，不論是老舊、低畫質、雜訊或模糊的影片 / 圖像，都能提升畫面解析度，穩定抖動的影片，還能提升影片幀率，並能以 GPU 硬體加速進行轉換、壓縮、錄製和編輯影片，實現每一幀都具備影院級視覺效果。限免版本存在一些功能限制，具體內容請參考<a href="https://www.winxdvd.com/zh/winxvideo-ai/giveaway-install.htm" target="_blank" rel="noopener">官網</a>。</p>
+<p><span id="more-150082"></span></p>
+<h2><strong>取得 Winxvideo AI V2.0 限免版本</strong></h2>
+<p><a href="https://www.winxdvd.com/giveaway/convert-video-free-zh.htm" target="_blank" rel="noopener">按此前往</a>活動頁面，輸入電子郵件信箱後按獲取限免版，接著會自動開始下載。</p>
+<p><a href="https://img.unikoshardware.com/wp-content/uploads/2024/07/01_07_30_2024.webp"><img decoding="async" loading="lazy" class="aligncenter size-full wp-image-150086" src="https://img.unikoshardware.com/wp-content/uploads/2024/07/01_07_30_2024.webp" alt="" width="1447" height="957" /></a></p>
+<p>到信箱檢查是否有收到序號，序號需要在 15 天內啟用。</p>
+<p><a href="https://img.unikoshardware.com/wp-content/uploads/2024/07/02_07_30_2024.webp"><img decoding="async" loading="lazy" class="aligncenter size-full wp-image-150087" src="https://img.unikoshardware.com/wp-content/uploads/2024/07/02_07_30_2024.webp" alt="" width="993" height="596" /></a></p>
+<p>安裝檔與主程式都支援繁體中文，依照指示安裝。</p>
+<p><a href="https://img.unikoshardware.com/wp-content/uploads/2024/07/03_07_30_2024.webp"><img decoding="async" loading="lazy" class="aligncenter size-full wp-image-150088" src="https://img.unikoshardware.com/wp-content/uploads/2024/07/03_07_30_2024.webp" alt="" width="712" height="512" /></a></p>
+<p>輸入信箱與剛剛獲得的序號，輸入完畢按啟用。</p>
+<p><a href="https://img.unikoshardware.com/wp-content/uploads/2024/07/04_07_30_2024.webp"><img decoding="async" loading="lazy" class="aligncenter size-full wp-image-150091" src="https://img.unikoshardware.com/wp-content/uploads/2024/07/04_07_30_2024.webp" alt="" width="847" height="850" srcset="https://img.unikoshardware.com/wp-content/uploads/2024/07/04_07_30_2024.webp 847w, https://img.unikoshardware.com/wp-content/uploads/2024/07/04_07_30_2024-350x350.webp 350w" sizes="(max-width: 847px) 100vw, 847px" /></a></p>
+<p>軟體會自動檢測你的硬體環境，按下一頁，再點選右下角的啟用硬體加速處理影片。</p>
+<p><a href="https://img.unikoshardware.com/wp-content/uploads/2024/07/05_07_30_2024.webp"><img decoding="async" loading="lazy" class="aligncenter size-full wp-image-150093" src="https://img.unikoshardware.com/wp-content/uploads/2024/07/05_07_30_2024.webp" alt="" width="1110" height="737" /></a></p>
+<p>若出現升級的廣告，按右上角 X 關閉就好。</p>
+<p><a href="https://img.unikoshardware.com/wp-content/uploads/2024/07/06_07_30_2024.webp"><img decoding="async" loading="lazy" class="aligncenter size-full wp-image-150095" src="https://img.unikoshardware.com/wp-content/uploads/2024/07/06_07_30_2024.webp" alt="" width="1000" height="587" /></a></p>
+<p>主畫面上有 5 個功能選項，分別是圖片 AI、視訊 AI、視訊轉換 (轉檔)、下載 (影片)、錄影。</p>
+<p><a href="https://img.unikoshardware.com/wp-content/uploads/2024/07/07_07_30_2024.webp"><img decoding="async" loading="lazy" class="aligncenter size-full wp-image-150096" src="https://img.unikoshardware.com/wp-content/uploads/2024/07/07_07_30_2024.webp" alt="" width="975" height="675" /></a></p>
+<p>使用方式為直接拖曳圖片進去，或點選左下角的匯入圖片，透過內建的 AI 模型，可以對圖片進行放大、清晰化、降噪等增強，按右下角的 RUN 即可開始處理。</p>
+<p><a href="https://img.unikoshardware.com/wp-content/uploads/2024/07/08_07_30_2024.webp"><img decoding="async" loading="lazy" class="aligncenter size-full wp-image-150098" src="https://img.unikoshardware.com/wp-content/uploads/2024/07/08_07_30_2024.webp" alt="" width="1367" height="908" /></a></p>
+<p>視訊 AI 則是增強影片畫質，還可插幀 (補幀) 跟畫面穩定。</p>
+<p><a href="https://img.unikoshardware.com/wp-content/uploads/2024/07/09_07_30_2024.webp"><img decoding="async" loading="lazy" class="aligncenter size-full wp-image-150118" src="https://img.unikoshardware.com/wp-content/uploads/2024/07/09_07_30_2024.webp" alt="" width="1367" height="908" /></a></p>
+<p>視訊轉換內有影音格式轉換，點下方的工具箱還可以使用合併、修剪、分割等簡易編輯功能。</p>
+<p><a href="https://img.unikoshardware.com/wp-content/uploads/2024/07/10_07_30_2024.webp"><img decoding="async" loading="lazy" class="aligncenter size-full wp-image-150124" src="https://img.unikoshardware.com/wp-content/uploads/2024/07/10_07_30_2024.webp" alt="" width="1347" height="887" /></a>喜歡我們的文章歡迎分享，別忘了追蹤 <a href="https://www.facebook.com/unikoshardware" target="_blank" rel="noopener">UH 粉絲專頁</a>並設為最愛，或是每天到 <a href="https://unikoshardware.com/">UH 網站</a>逛逛，才不會錯過各種軟硬體資訊喔！</p>
+<p><span style="color: #0000ff;">延伸閱讀</span></p>
+<p><a href="https://unikoshardware.com/2023/12/real-esrgan-ncnn-vulkan-gui-v0250.html">效果亮眼的免費 AI 圖片放大軟體 – Real-ESRGAN ncnn Vulkan</a></p>
+<p><a href="https://unikoshardware.com/2024/01/rife-gui-v011.html">基於 RIFE ncnn Vulkan 的免費 AI 影片補幀軟體 – Rife-GUI</a></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://unikoshardware.com/2024/07/giveaway-winxvideo-ai-v20-18th.html/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>12.2 cm 精巧體積！ENERMAX REVOLUTION D.F. 12 850W ATX 3.1 電源開箱</title>
+		<link>https://unikoshardware.com/2024/07/enermax-revolution-df-12-850-review.html</link>
+					<comments>https://unikoshardware.com/2024/07/enermax-revolution-df-12-850-review.html#respond</comments>
+		
+		<dc:creator><![CDATA[Louis]]></dc:creator>
+		<pubDate>Tue, 30 Jul 2024 08:26:04 +0000</pubDate>
+				<category><![CDATA[散熱器 | 機殼 | 電源 | 風扇]]></category>
+		<category><![CDATA[評測開箱]]></category>
+		<category><![CDATA[電源供應器]]></category>
+		<category><![CDATA[ENERMAX]]></category>
+		<category><![CDATA[評測]]></category>
+		<category><![CDATA[開箱]]></category>
+		<guid isPermaLink="false">https://unikoshardware.com/?p=149488</guid>
+
+					<description><![CDATA[今年筆者在 COMPUTEX 上，看到各家品牌紛紛展出符合 ATX 3.1 &#38; PCIe 5.1 規範 [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><img decoding="async" loading="lazy" class="aligncenter wp-image-149490 size-full" src="https://img.unikoshardware.com/wp-content/uploads/2024/07/enermax_revolution_d.f.12_850w_review.webp" alt="12.2 cm 精巧體積！ENERMAX REVOLUTION D.F. 12 850W ATX 3.1 電源開箱" width="1500" height="844" /></p>
+<p>今年筆者在 COMPUTEX 上，看到各家品牌紛紛展出符合 ATX 3.1 &amp; PCIe 5.1 規範的電源供應器，顯示此規範將成為市場上的主流。資深品牌 ENERMAX 安耐美自然也不會錯過，積極佈局產品線，推出新款金牌認證的金靜冰核系列 REVOLUTION D.F. 12，主打體積小巧僅 12.2 cm 的低深度設計，能讓出更多的機殼空間給氣流通行，更適合內部空間緊湊的小型機殼使用！</p>
+<p><span id="more-149488"></span></p>
+<h2><strong>ENERMAX REVOLUTION D.F. 12 外觀配件</strong></h2>
+<h3>產品外盒</h3>
+<p>此系列有 750W、850W 黑色與白色共 3 種版本，這次要開箱的是 850W 黑色版本。ENERMAX 的電源供應器外包裝捨去了複雜的彩色印刷，官方宣稱包裝精簡後減少了 28.7% 的材料體積，筆者相當喜歡這樣的風格，除了簡單明瞭外也比較環保。正面印有產品名稱和本體外觀，並簡單以圖示表明這是一款具備 12V-2x6 接頭的 ATX 3.1 金牌電源。背面印上產品規格以及重點特色，包含最小尺寸的 ATX 電源、12V-2x6 線材、逆轉風扇彈塵技術等。<br />
+<a href="https://img.unikoshardware.com/wp-content/uploads/2024/07/enermax_revolution_d.f.12_850w-1.webp"><img decoding="async" loading="lazy" class="aligncenter size-full wp-image-149495" src="https://img.unikoshardware.com/wp-content/uploads/2024/07/enermax_revolution_d.f.12_850w-1.webp" alt="" width="1500" height="844" /></a> <a href="https://img.unikoshardware.com/wp-content/uploads/2024/07/enermax_revolution_d.f.12_850w-2.webp"><img decoding="async" loading="lazy" class="aligncenter size-full wp-image-149496" src="https://img.unikoshardware.com/wp-content/uploads/2024/07/enermax_revolution_d.f.12_850w-2.webp" alt="" width="1500" height="844" /></a></p>
+<h3>配件與線材</h3>
+<p>包裝盒內有兩個防塵包，分別裝著電源供應器跟線材配件，還有一份使用說明書。<br />
+<a href="https://img.unikoshardware.com/wp-content/uploads/2024/07/enermax_revolution_d.f.12_850w-3.webp"><img decoding="async" loading="lazy" class="aligncenter size-full wp-image-149497" src="https://img.unikoshardware.com/wp-content/uploads/2024/07/enermax_revolution_d.f.12_850w-3.webp" alt="" width="1500" height="844" /></a></p>
+<p>先來看配件包的部分，裡面包含所有的線材、24 Pin 啟動接頭、螺絲與理線梳等。附上理線梳可說是相當貼心，總共有 24 Pin x 3、12 Pin x 3、8 Pin x 15、6 Pin x 6，可以將外露的電源線整理起來，提升視覺整潔度。壓紋線材的材質非常柔軟，不像編織線那樣粗硬，能毫不費力的卡進理線梳。<br />
+<a href="https://img.unikoshardware.com/wp-content/uploads/2024/07/enermax_revolution_d.f.12_850w-4.webp"><img decoding="async" loading="lazy" class="aligncenter size-full wp-image-149498" src="https://img.unikoshardware.com/wp-content/uploads/2024/07/enermax_revolution_d.f.12_850w-4.webp" alt="" width="1500" height="844" /></a> <a href="https://img.unikoshardware.com/wp-content/uploads/2024/07/enermax_revolution_d.f.12_850w-5.webp"><img decoding="async" loading="lazy" class="aligncenter size-full wp-image-149499" src="https://img.unikoshardware.com/wp-content/uploads/2024/07/enermax_revolution_d.f.12_850w-5.webp" alt="" width="1500" height="844" /></a></p>
+<p>接著我們進一步看看隨附的模組化線材，24 Pin 線長 60 cm，有兩條 CPU 用的 4 + 4 Pin，長度達 70 cm。<br />
+<a href="https://img.unikoshardware.com/wp-content/uploads/2024/07/enermax_revolution_d.f.12_850w-6.webp"><img decoding="async" loading="lazy" class="aligncenter size-full wp-image-149500" src="https://img.unikoshardware.com/wp-content/uploads/2024/07/enermax_revolution_d.f.12_850w-6.webp" alt="" width="1500" height="844" /></a></p>
+<p>6 + 2 Pin 的 PCIe 線材共有三條，長度 60 cm，還有一條相當重要的 12V-2x6 線材，長度是 60 cm。<br />
+<a href="https://img.unikoshardware.com/wp-content/uploads/2024/07/enermax_revolution_d.f.12_850w-7.webp"><img decoding="async" loading="lazy" class="aligncenter size-full wp-image-149501" src="https://img.unikoshardware.com/wp-content/uploads/2024/07/enermax_revolution_d.f.12_850w-7.webp" alt="" width="1500" height="844" /></a> <a href="https://img.unikoshardware.com/wp-content/uploads/2024/07/enermax_revolution_d.f.12_850w-8.webp"><img decoding="async" loading="lazy" class="aligncenter size-full wp-image-149502" src="https://img.unikoshardware.com/wp-content/uploads/2024/07/enermax_revolution_d.f.12_850w-8.webp" alt="" width="1500" height="844" /></a></p>
+<p>SATA 電源共有兩條，每條上面有 4 個 SATA 電源接頭，各接頭間隔 15 cm。Molex 電源也沒被遺忘，一條上面有 4 個 Molex 接頭，每個間隔也是 15 cm。<br />
+<a href="https://img.unikoshardware.com/wp-content/uploads/2024/07/enermax_revolution_d.f.12_850w-9.webp"><img decoding="async" loading="lazy" class="aligncenter size-full wp-image-149503" src="https://img.unikoshardware.com/wp-content/uploads/2024/07/enermax_revolution_d.f.12_850w-9.webp" alt="" width="1500" height="844" /></a></p>
+<h3>電源供應器本體</h3>
+<p>電源本體造型以黑色為主黃色區塊為輔，黃色也有 80 PLUS 金牌認證的意涵在。電源模組線接頭的部分就是對應每條模組線，排列相當緊湊。<br />
+<a href="https://img.unikoshardware.com/wp-content/uploads/2024/07/enermax_revolution_d.f.12_850w-10.webp"><img decoding="async" loading="lazy" class="aligncenter size-full wp-image-149504" src="https://img.unikoshardware.com/wp-content/uploads/2024/07/enermax_revolution_d.f.12_850w-10.webp" alt="" width="1500" height="844" /></a> <a href="https://img.unikoshardware.com/wp-content/uploads/2024/07/enermax_revolution_d.f.12_850w-11.webp"><img decoding="async" loading="lazy" class="aligncenter size-full wp-image-149505" src="https://img.unikoshardware.com/wp-content/uploads/2024/07/enermax_revolution_d.f.12_850w-11.webp" alt="" width="1500" height="844" /></a></p>
+<p>負責整個電源散熱主力的風扇，採用工業級雙滾珠軸承與 6 極馬達，保證了使用穩定性及壽命，在電源未使用超過 50% 負載或過溫前，風扇都會處於靜止狀態。AC 電源接頭那邊有一個 D.F Switch，中文名叫逆轉彈塵專用啟動按鈕，是電源主要特色之一，可以手動啟用風扇逆轉。除了手動啟動逆轉之外，每次開啟電源時，風扇都會先以逆轉的方式啟動自體清潔，讓電源內部氣流暢通，以延長使用壽命。<br />
+<a href="https://img.unikoshardware.com/wp-content/uploads/2024/07/enermax_revolution_d.f.12_850w-12.webp"><img decoding="async" loading="lazy" class="aligncenter size-full wp-image-149506" src="https://img.unikoshardware.com/wp-content/uploads/2024/07/enermax_revolution_d.f.12_850w-12.webp" alt="" width="1500" height="844" /></a> <a href="https://img.unikoshardware.com/wp-content/uploads/2024/07/enermax_revolution_d.f.12_850w-13.webp"><img decoding="async" loading="lazy" class="aligncenter size-full wp-image-149507" src="https://img.unikoshardware.com/wp-content/uploads/2024/07/enermax_revolution_d.f.12_850w-13.webp" alt="" width="1500" height="844" /></a></p>
+<p>另一個重大特色就是體積，深度只有 12.2 cm，這點在實際應用上有甚麼優勢呢？依筆者的開箱跟裝機經驗，有些 M-ATX 機殼內部空間比較沒那麼充裕，或是電源供應器安放位置在機殼前面，若此時使用深度較短的電源供應器，安裝會順手非常多。<br />
+<a href="https://img.unikoshardware.com/wp-content/uploads/2024/07/enermax_revolution_d.f.12_850w-14.webp"><img decoding="async" loading="lazy" class="aligncenter size-full wp-image-149508" src="https://img.unikoshardware.com/wp-content/uploads/2024/07/enermax_revolution_d.f.12_850w-14.webp" alt="" width="1500" height="844" /></a></p>
+<p>此系列採用 100% 全日系電容，可承受 235% 的峰值功耗，並有多重安全保護，如 OCP 過電流保護、OVP 過電壓保護、UVP 低電壓保護、OPP 過負載保護、OTP 過溫度保護、SCP 短路保護等，輸出採用 +12V 單路輸出。<br />
+<a href="https://img.unikoshardware.com/wp-content/uploads/2024/07/enermax_revolution_d.f.12_850w-15.webp"><img decoding="async" loading="lazy" class="aligncenter size-full wp-image-149509" src="https://img.unikoshardware.com/wp-content/uploads/2024/07/enermax_revolution_d.f.12_850w-15.webp" alt="" width="1500" height="844" /></a></p>
+<p>雖然用上最新的原生 12V-2x6 線材，支援達 600W 的電力輸出，安裝時仍需注意是否有完全插入，一定要推進到底。<br />
+<a href="https://img.unikoshardware.com/wp-content/uploads/2024/07/enermax_revolution_d.f.12_850w-16.webp"><img decoding="async" loading="lazy" class="aligncenter size-full wp-image-149510" src="https://img.unikoshardware.com/wp-content/uploads/2024/07/enermax_revolution_d.f.12_850w-16.webp" alt="" width="1500" height="844" /></a></p>
+<h2><strong>規格</strong></h2>
+<div class="wptb-table-container wptb-table-149515"><div class="wptb-table-container-matrix" id="wptb-table-id-149515" data-wptb-version="1.5.0" data-wptb-pro-status="false"><table class="wptb-preview-table wptb-element-main-table_setting-149515 edit-active" data-wptb-adaptive-table="0" data-wptb-cells-width-auto-count="2" data-wptb-table-tds-sum-max-width="265.6" style="border-style: solid; border-width: 3px; border-color: rgb(0, 0, 0);" data-table-columns="2" data-reconstraction="1" data-wptb-horizontal-scroll-status="false" data-wptb-extra-styles="LyogRW50ZXIgeW91ciBjdXN0b20gQ1NTIHJ1bGVzIGhlcmUgKi8=" role="table" data-wptb-header-background-color="#FFFFFFFF" data-wptb-even-row-background-color="#FFFFFFFF" data-wptb-odd-row-background-color="#FFFFFFFF"><tbody><tr class="wptb-row" style="background-color: rgb(255, 255, 255);"><td class="wptb-cell" data-wptb-css-td-auto-width="true" data-x-index="0" data-y-index="0" style="padding: 15px; border-style: solid; border-width: 1px; border-color: rgb(0, 0, 0);"><div class="wptb-text-container wptb-ph-element wptb-element-text-1" style="color: rgb(0, 0, 0); font-size: 15px;"><div class="" style="position: relative;"><p class="wp-exclude-emoji">&#25928;&#29575;</p></div></div></td><td class="wptb-cell" data-wptb-css-td-auto-width="true" data-x-index="1" data-y-index="0" style="padding: 15px; border-style: solid; border-width: 1px; border-color: rgb(0, 0, 0);"><div class="wptb-text-container wptb-ph-element wptb-element-text-2" style="color: rgb(0, 0, 0); font-size: 15px;"><div class="" style="position: relative;"><p class="wp-exclude-emoji">&#37329;&#29260;</p></div></div></td></tr><tr class="wptb-row" style="--hover-bg-color: undefined; background-color: rgb(255, 255, 255);"><td class="wptb-cell" data-wptb-css-td-auto-width="true" data-x-index="0" data-y-index="1" style="padding: 15px; border-style: solid; border-width: 1px; border-color: rgb(0, 0, 0);"><div class="wptb-text-container wptb-ph-element wptb-element-text-3" style="color: rgb(0, 0, 0); font-size: 15px;"><div class="" style="position: relative;"><p class="wp-exclude-emoji">&#27169;&#32068;&#21270;</p></div></div></td><td class="wptb-cell" data-wptb-css-td-auto-width="true" data-x-index="1" data-y-index="1" style="padding: 15px; border-style: solid; border-width: 1px; border-color: rgb(0, 0, 0);"><div class="wptb-text-container wptb-ph-element wptb-element-text-4" style="color: rgb(0, 0, 0); font-size: 15px;"><div class="" style="position: relative;"><p class="wp-exclude-emoji">&#20840;&#27169;&#32068;&#21270;</p></div></div></td></tr><tr class="wptb-row" style="--hover-bg-color: undefined; background-color: rgb(255, 255, 255);"><td class="wptb-cell" data-wptb-css-td-auto-width="true" data-x-index="0" data-y-index="2" style="padding: 15px; border-style: solid; border-width: 1px; border-color: rgb(0, 0, 0);"><div class="wptb-text-container wptb-ph-element wptb-element-text-5" style="color: rgb(0, 0, 0); font-size: 15px;"><div class="" style="position: relative;"><p class="wp-exclude-emoji">&#32218;&#26448;</p></div></div></td><td class="wptb-cell" data-wptb-css-td-auto-width="true" data-x-index="1" data-y-index="2" style="padding: 15px; border-style: solid; border-width: 1px; border-color: rgb(0, 0, 0);"><div class="wptb-text-container wptb-ph-element wptb-element-text-6" style="color: rgb(0, 0, 0); font-size: 15px;"><div class="" style="position: relative;"><p class="wp-exclude-emoji">&#22739;&#32011;&#32218;</p></div></div></td></tr><tr class="wptb-row" style="--hover-bg-color: undefined; background-color: rgb(255, 255, 255);"><td class="wptb-cell" data-wptb-css-td-auto-width="true" data-x-index="0" data-y-index="3" style="padding: 15px; border-style: solid; border-width: 1px; border-color: rgb(0, 0, 0);"><div class="wptb-text-container wptb-ph-element wptb-element-text-7" style="color: rgb(0, 0, 0); font-size: 15px;"><div class="" style="position: relative;"><p class="wp-exclude-emoji">&#32317;&#29926;&#25976; (W)</p></div></div></td><td class="wptb-cell" data-wptb-css-td-auto-width="true" data-x-index="1" data-y-index="3" style="padding: 15px; border-style: solid; border-width: 1px; border-color: rgb(0, 0, 0);"><div class="wptb-text-container wptb-ph-element wptb-element-text-8" style="color: rgb(0, 0, 0); font-size: 15px;"><div class="" style="position: relative;"><p class="wp-exclude-emoji">850</p></div></div></td></tr><tr class="wptb-row" style="--hover-bg-color: undefined; background-color: rgb(255, 255, 255);"><td class="wptb-cell" data-wptb-css-td-auto-width="true" data-x-index="0" data-y-index="4" style="padding: 15px; border-style: solid; border-width: 1px; border-color: rgb(0, 0, 0);"><div class="wptb-text-container wptb-ph-element wptb-element-text-9" style="color: rgb(0, 0, 0); font-size: 15px;"><div class="" style="position: relative;"><p class="wp-exclude-emoji">&#36664;&#20837;&#38651;&#22739; (V)</p></div></div></td><td class="wptb-cell" data-wptb-css-td-auto-width="true" data-x-index="1" data-y-index="4" style="padding: 15px; border-style: solid; border-width: 1px; border-color: rgb(0, 0, 0);"><div class="wptb-text-container wptb-ph-element wptb-element-text-10" style="color: rgb(0, 0, 0); font-size: 15px;"><div class="" style="position: relative;"><p class="wp-exclude-emoji">100-240</p></div></div></td></tr><tr class="wptb-row" style="--hover-bg-color: undefined; background-color: rgb(255, 255, 255);"><td class="wptb-cell" data-wptb-css-td-auto-width="true" data-x-index="0" data-y-index="5" style="padding: 15px; border-style: solid; border-width: 1px; border-color: rgb(0, 0, 0);"><div class="wptb-text-container wptb-ph-element wptb-element-text-11" style="color: rgb(0, 0, 0); font-size: 15px;"><div class="" style="position: relative;"><p class="wp-exclude-emoji">&#36664;&#20837;&#38651;&#27969; (A)</p></div></div></td><td class="wptb-cell" data-wptb-css-td-auto-width="true" data-x-index="1" data-y-index="5" style="padding: 15px; border-style: solid; border-width: 1px; border-color: rgb(0, 0, 0);"><div class="wptb-text-container wptb-ph-element wptb-element-text-12" style="color: rgb(0, 0, 0); font-size: 15px;"><div class="" style="position: relative;"><p class="wp-exclude-emoji">10</p></div></div></td></tr><tr class="wptb-row" style="--hover-bg-color: undefined; background-color: rgb(255, 255, 255);"><td class="wptb-cell" data-wptb-css-td-auto-width="true" data-x-index="0" data-y-index="6" style="padding: 15px; border-style: solid; border-width: 1px; border-color: rgb(0, 0, 0);"><div class="wptb-text-container wptb-ph-element wptb-element-text-13" style="color: rgb(0, 0, 0); font-size: 15px;"><div class="" style="position: relative;"><p class="wp-exclude-emoji">&#36664;&#20837;&#38971;&#29575; (Hz)</p></div></div></td><td class="wptb-cell" data-wptb-css-td-auto-width="true" data-x-index="1" data-y-index="6" style="padding: 15px; border-style: solid; border-width: 1px; border-color: rgb(0, 0, 0);"><div class="wptb-text-container wptb-ph-element wptb-element-text-14" style="color: rgb(0, 0, 0); font-size: 15px;"><div class="" style="position: relative;"><p class="wp-exclude-emoji">50-60</p></div></div></td></tr><tr class="wptb-row" style="--hover-bg-color: undefined; background-color: rgb(255, 255, 255);"><td class="wptb-cell" data-wptb-css-td-auto-width="true" data-x-index="0" data-y-index="7" style="padding: 15px; border-style: solid; border-width: 1px; border-color: rgb(0, 0, 0);"><div class="wptb-text-container wptb-ph-element wptb-element-text-15" style="color: rgb(0, 0, 0); font-size: 15px;"><div class="" style="position: relative;"><p class="wp-exclude-emoji">&#39080;&#25159;&#23610;&#23544; (mm)</p></div></div></td><td class="wptb-cell" data-wptb-css-td-auto-width="true" data-x-index="1" data-y-index="7" style="padding: 15px; border-style: solid; border-width: 1px; border-color: rgb(0, 0, 0);"><div class="wptb-text-container wptb-ph-element wptb-element-text-16" style="color: rgb(0, 0, 0); font-size: 15px;"><div class="" style="position: relative;"><p class="wp-exclude-emoji">115</p></div></div></td></tr><tr class="wptb-row" style="--hover-bg-color: undefined; background-color: rgb(255, 255, 255);"><td class="wptb-cell" data-wptb-css-td-auto-width="true" data-x-index="0" data-y-index="8" style="padding: 15px; border-style: solid; border-width: 1px; border-color: rgb(0, 0, 0);"><div class="wptb-text-container wptb-ph-element wptb-element-text-17" style="color: rgb(0, 0, 0); font-size: 15px;"><div class="" style="position: relative;"><p class="wp-exclude-emoji">&#24037;&#20316;&#28331;&#24230; (&deg;C)</p></div></div></td><td class="wptb-cell" data-wptb-css-td-auto-width="true" data-x-index="1" data-y-index="8" style="padding: 15px; border-style: solid; border-width: 1px; border-color: rgb(0, 0, 0);"><div class="wptb-text-container wptb-ph-element wptb-element-text-18" style="color: rgb(0, 0, 0); font-size: 15px;"><div class="" style="position: relative;"><p class="wp-exclude-emoji">50</p></div></div></td></tr><tr class="wptb-row" style="--hover-bg-color: undefined; background-color: rgb(255, 255, 255);"><td class="wptb-cell" data-wptb-css-td-auto-width="true" data-x-index="0" data-y-index="9" style="padding: 15px; border-style: solid; border-width: 1px; border-color: rgb(0, 0, 0);"><div class="wptb-text-container wptb-ph-element wptb-element-text-19" style="color: rgb(0, 0, 0); font-size: 15px;"><div class="" style="position: relative;"><p class="wp-exclude-emoji">&#24179;&#22343;&#25925;&#38556;&#38291;&#38548; (&#23567;&#26178;)</p></div></div></td><td class="wptb-cell" data-wptb-css-td-auto-width="true" data-x-index="1" data-y-index="9" style="padding: 15px; border-style: solid; border-width: 1px; border-color: rgb(0, 0, 0);"><div class="wptb-text-container wptb-ph-element wptb-element-text-20" style="color: rgb(0, 0, 0); font-size: 15px;"><div class="" style="position: relative;"><p class="wp-exclude-emoji">&gt;100K</p></div></div></td></tr><tr class="wptb-row" style="--hover-bg-color: undefined; background-color: rgb(255, 255, 255);"><td class="wptb-cell" data-wptb-css-td-auto-width="true" data-x-index="0" data-y-index="10" style="padding: 15px; border-style: solid; border-width: 1px; border-color: rgb(0, 0, 0);"><div class="wptb-text-container wptb-ph-element wptb-element-text-21" style="color: rgb(0, 0, 0); font-size: 15px;"><div class="" style="position: relative;"><p class="wp-exclude-emoji">&#23433;&#20840;&#20445;&#35703;</p></div></div></td><td class="wptb-cell" data-wptb-css-td-auto-width="true" data-x-index="1" data-y-index="10" style="padding: 15px; border-style: solid; border-width: 1px; border-color: rgb(0, 0, 0);"><div class="wptb-text-container wptb-ph-element wptb-element-text-22" style="color: rgb(0, 0, 0); font-size: 15px;"><div class="" style="position: relative;"><p class="wp-exclude-emoji">OCP, OVP, UVP, OPP, OTP, SCP</p></div></div></td></tr><tr class="wptb-row" style="--hover-bg-color: undefined; background-color: rgb(255, 255, 255);"><td class="wptb-cell" data-wptb-css-td-auto-width="true" data-x-index="0" data-y-index="11" style="padding: 15px; border-style: solid; border-width: 1px; border-color: rgb(0, 0, 0);"><div class="wptb-text-container wptb-ph-element wptb-element-text-23" style="color: rgb(0, 0, 0); font-size: 15px;"><div class="" style="position: relative;"><p class="wp-exclude-emoji">&#29986;&#21697;&#23610;&#23544; (&#38263; X &#23532; X &#39640;), (mm)</p></div></div></td><td class="wptb-cell" data-wptb-css-td-auto-width="true" data-x-index="1" data-y-index="11" style="padding: 15px; border-style: solid; border-width: 1px; border-color: rgb(0, 0, 0);"><div class="wptb-text-container wptb-ph-element wptb-element-text-24" style="color: rgb(0, 0, 0); font-size: 15px;"><div class="" style="position: relative;"><p class="wp-exclude-emoji">122 x 150 x 86</p></div></div></td></tr><tr class="wptb-row" style="--hover-bg-color: undefined; background-color: rgb(255, 255, 255);"><td class="wptb-cell" data-wptb-css-td-auto-width="true" data-x-index="0" data-y-index="12" style="padding: 15px; border-style: solid; border-width: 1px; border-color: rgb(0, 0, 0);"><div class="wptb-text-container wptb-ph-element wptb-element-text-25" style="color: rgb(0, 0, 0); font-size: 15px;"><div class="" style="position: relative;"><p class="wp-exclude-emoji">+3.3V(A)</p></div></div></td><td class="wptb-cell" data-wptb-css-td-auto-width="true" data-x-index="1" data-y-index="12" style="padding: 15px; border-style: solid; border-width: 1px; border-color: rgb(0, 0, 0);"><div class="wptb-text-container wptb-ph-element wptb-element-text-26" style="color: rgb(0, 0, 0); font-size: 15px;"><div class="" style="position: relative;"><p class="wp-exclude-emoji">20</p></div></div></td></tr><tr class="wptb-row" style="--hover-bg-color: undefined; background-color: rgb(255, 255, 255);"><td class="wptb-cell" data-wptb-css-td-auto-width="true" data-x-index="0" data-y-index="13" style="padding: 15px; border-style: solid; border-width: 1px; border-color: rgb(0, 0, 0);"><div class="wptb-text-container wptb-ph-element wptb-element-text-27" style="color: rgb(0, 0, 0); font-size: 15px;"><div class="" style="position: relative;"><p class="wp-exclude-emoji">+5V(A)</p></div></div></td><td class="wptb-cell" data-wptb-css-td-auto-width="true" data-x-index="1" data-y-index="13" style="padding: 15px; border-style: solid; border-width: 1px; border-color: rgb(0, 0, 0);"><div class="wptb-text-container wptb-ph-element wptb-element-text-28" style="color: rgb(0, 0, 0); font-size: 15px;"><div class="" style="position: relative;"><p class="wp-exclude-emoji">20</p></div></div></td></tr><tr class="wptb-row" style="--hover-bg-color: undefined; background-color: rgb(255, 255, 255);"><td class="wptb-cell" data-wptb-css-td-auto-width="true" data-x-index="0" data-y-index="14" style="padding: 15px; border-style: solid; border-width: 1px; border-color: rgb(0, 0, 0);"><div class="wptb-text-container wptb-ph-element wptb-element-text-29" style="color: rgb(0, 0, 0); font-size: 15px;"><div class="" style="position: relative;"><p class="wp-exclude-emoji">+12V1(A)</p></div></div></td><td class="wptb-cell" data-wptb-css-td-auto-width="true" data-x-index="1" data-y-index="14" style="padding: 15px; border-style: solid; border-width: 1px; border-color: rgb(0, 0, 0);"><div class="wptb-text-container wptb-ph-element wptb-element-text-30" style="color: rgb(0, 0, 0); font-size: 15px;"><div class="" style="position: relative;"><p class="wp-exclude-emoji">70.8</p></div></div></td></tr><tr class="wptb-row" style="--hover-bg-color: undefined; background-color: rgb(255, 255, 255);"><td class="wptb-cell" data-wptb-css-td-auto-width="true" data-x-index="0" data-y-index="15" style="padding: 15px; border-style: solid; border-width: 1px; border-color: rgb(0, 0, 0);"><div class="wptb-text-container wptb-ph-element wptb-element-text-31" style="color: rgb(0, 0, 0); font-size: 15px;"><div class="" style="position: relative;"><p class="wp-exclude-emoji">-12V(A)</p></div></div></td><td class="wptb-cell" data-wptb-css-td-auto-width="true" data-x-index="1" data-y-index="15" style="padding: 15px; border-style: solid; border-width: 1px; border-color: rgb(0, 0, 0);"><div class="wptb-text-container wptb-ph-element wptb-element-text-32" style="color: rgb(0, 0, 0); font-size: 15px;"><div class="" style="position: relative;"><p class="wp-exclude-emoji">0.4</p></div></div></td></tr><tr class="wptb-row" style="--hover-bg-color: undefined; background-color: rgb(255, 255, 255);"><td class="wptb-cell" data-wptb-css-td-auto-width="true" data-x-index="0" data-y-index="16" style="padding: 15px; border-style: solid; border-width: 1px; border-color: rgb(0, 0, 0);"><div class="wptb-text-container wptb-ph-element wptb-element-text-33" style="color: rgb(0, 0, 0); font-size: 15px;"><div class="" style="position: relative;"><p class="wp-exclude-emoji">+5VSB(A)</p></div></div></td><td class="wptb-cell" data-wptb-css-td-auto-width="true" data-x-index="1" data-y-index="16" style="padding: 15px; border-style: solid; border-width: 1px; border-color: rgb(0, 0, 0);"><div class="wptb-text-container wptb-ph-element wptb-element-text-34" style="color: rgb(0, 0, 0); font-size: 15px;"><div class="" style="position: relative;"><p class="wp-exclude-emoji">3</p></div></div></td></tr><tr class="wptb-row" style="--hover-bg-color: undefined; background-color: rgb(255, 255, 255);"><td class="wptb-cell" data-wptb-css-td-auto-width="true" data-x-index="0" data-y-index="17" style="padding: 15px; border-style: solid; border-width: 1px; border-color: rgb(0, 0, 0);"><div class="wptb-text-container wptb-ph-element wptb-element-text-35" style="color: rgb(0, 0, 0); font-size: 15px;"><div class="" style="position: relative;"><p class="wp-exclude-emoji">COMBINED WATTAGE 12V (W)</p></div></div></td><td class="wptb-cell" data-wptb-css-td-auto-width="true" data-x-index="1" data-y-index="17" style="padding: 15px; border-style: solid; border-width: 1px; border-color: rgb(0, 0, 0);"><div class="wptb-text-container wptb-ph-element wptb-element-text-36" style="color: rgb(0, 0, 0); font-size: 15px;"><div class="" style="position: relative;"><p class="wp-exclude-emoji">849.6</p></div></div></td></tr><tr class="wptb-row" style="--hover-bg-color: undefined; background-color: rgb(255, 255, 255);"><td class="wptb-cell" data-wptb-css-td-auto-width="true" data-x-index="0" data-y-index="18" style="padding: 15px; border-style: solid; border-width: 1px; border-color: rgb(0, 0, 0);"><div class="wptb-text-container wptb-ph-element wptb-element-text-37" style="color: rgb(0, 0, 0); font-size: 15px;"><div class="" style="position: relative;"><p class="wp-exclude-emoji">COMBINED WATTAGE 3.3V + 5V(W)</p></div></div></td><td class="wptb-cell" data-wptb-css-td-auto-width="true" data-x-index="1" data-y-index="18" style="padding: 15px; border-style: solid; border-width: 1px; border-color: rgb(0, 0, 0);"><div class="wptb-text-container wptb-ph-element wptb-element-text-38" style="color: rgb(0, 0, 0); font-size: 15px;"><div class="" style="position: relative;"><p class="wp-exclude-emoji">100</p></div></div></td></tr></tbody></table></div></div>
+
+<h2><strong>總結</strong></h2>
+<p><a href="https://img.unikoshardware.com/wp-content/uploads/2024/07/enermax_revolution_d.f.12_850w-18.webp"><img decoding="async" loading="lazy" class="aligncenter size-full wp-image-149511" src="https://img.unikoshardware.com/wp-content/uploads/2024/07/enermax_revolution_d.f.12_850w-18.webp" alt="" width="1500" height="844" /></a></p>
+<p>雖然之前我們介紹過不少款 ATX 3.1 &amp; PCIe 5.1 的電源供應器，但現在 DIY 市場中流通的產品仍以 ATX 3.0 &amp; PCIe 5.0 為大宗，造成玩家在選購電源時可能會有猶豫。目前 ENERMAX REVOLUTION D.F. 12 提供 750W 及 850W 兩種主流規格，售價分別是 NT$ 3,990 跟 NT$ 4,390，而 850W 的白色版則是 NT$ 4,590，算是中階以上的訂價。</p>
+<p>這顆電源擁有時下最新的規格、金牌認證、全日系電容、十年保固等，加上短機身的特性，其實值得這個價位。從另一個角度來看，如果想組緊湊型 ATX / M-ATX 機殼的玩家，除了 SFX 電源外也多了一個選擇，有著較短的深度以及柔軟的壓紋線材，會讓你安裝起來更加順手。筆者認為要是預算沒有那麼吃緊的話，這款電源會是不錯的選擇，畢竟不會時常更換，保固時間比其他零件久，選一款規格新且設計適合長期使用的反而更有優勢。</p>
+<p><a href="https://www.enermax.com/products/revolution-d.f.-12-850w" target="_blank" rel="noopener">ENERMAX REVOLUTION D.F. 12 850W</a></p>
+<p><span style="color: #0000ff;">延伸閱讀</span></p>
+<p><a href="https://unikoshardware.com/2024/05/enermax-platigemini-1200w-review.html">結合 ATX12VO 和 ATX 3.1 雙標準！ENERMAX PlatiGemini 1200W 白金牌電源供應器開箱</a></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://unikoshardware.com/2024/07/enermax-revolution-df-12-850-review.html/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>芝奇推出 DDR5-6000 CL28 Trident Z5 Royal Neo EXPO 低延遲記憶體</title>
+		<link>https://unikoshardware.com/2024/07/gskill-trident-z5-royal-neo-cl28.html</link>
+					<comments>https://unikoshardware.com/2024/07/gskill-trident-z5-royal-neo-cl28.html#respond</comments>
+		
+		<dc:creator><![CDATA[Press Release]]></dc:creator>
+		<pubDate>Tue, 30 Jul 2024 07:51:44 +0000</pubDate>
+				<category><![CDATA[新聞稿]]></category>
+		<category><![CDATA[G.SKILL]]></category>
+		<guid isPermaLink="false">https://unikoshardware.com/?p=150045</guid>
+
+					<description><![CDATA[Press Release G.SKILL 芝奇國際宣布旗下專為 AMD AM5 平台打造的 DDR5 Tri [&#8230;]]]></description>
+										<content:encoded><![CDATA[<div class="alert alert-info" style="text-align: center;"><strong>Press Release</strong></div>
+<p><img decoding="async" loading="lazy" class="aligncenter size-full wp-image-150047" src="https://img.unikoshardware.com/wp-content/uploads/2024/07/01-trident-z5-royal-neo-silver-amd-expo-main-banner_07_30_2024.webp" alt="芝奇推出 DDR5-6000 CL28 Trident Z5 Royal Neo EXPO 低延遲記憶體" width="1200" height="675" /></p>
+<p><a href="https://www.gskill.com/tw/" target="_blank" rel="noopener">G.SKILL</a> 芝奇國際宣布旗下專為 AMD AM5 平台打造的 DDR5 Trident Z5 Royal Neo 皇家戟 EXPO 版超頻記憶體套裝規格，新推出 DDR5-6000 CL28-36-36-96 2x16GB / 2x32GB 以及 DDR5-6000 CL28-38-38-96 2x24GB / 2x48GB 超低時序規格方案，提供 AM5 平台的電競玩家與超頻好手更流暢的效能，並帶來更穩定的使用體驗。</p>
+<p><span id="more-150045"></span></p>
+<h2><strong>芝奇推出 Trident Z5 Royal Neo 低延遲記憶體</strong></h2>
+<p>憑藉著頂尖的記憶體超頻研發實力，芝奇資深研發團隊堅持不懈，挑戰往超低延遲邁進，成功將 CL28 超低時序帶入 AMD AM5 平台，推出 DDR5-6000 CL28-36-36-96 2x16GB / 2x32GB 以及 DDR5-6000 CL28-38-38-96 2x24GB / 2x48GB 套裝記憶體，並將加入皇家戟 EXPO 版 DDR5 超頻記憶體系列，是 AMD 平台用戶以及高階玩家追求低延遲的嶄新選擇。</p>
+<p><a href="https://img.unikoshardware.com/wp-content/uploads/2024/07/02-trident-z5-royal-neo-gold-mb.webp"><img decoding="async" loading="lazy" class="aligncenter size-full wp-image-150056" src="https://img.unikoshardware.com/wp-content/uploads/2024/07/02-trident-z5-royal-neo-gold-mb.webp" alt="" width="1000" height="667" /></a></p>
+<p>本次的 DDR5 Trident Z5 Royal Neo 皇家戟 EXPO 版 DDR5-6000 超頻規格皆已導入 AMD EXPO 超頻技術，使用者只需於主機板 BIOS 中開啟 AMD EXPO 功能，並搭載可對應的主機板及 CPU，即可讓記憶體運作於官方標示的超頻速度。套裝預計於 2024 年 8 月開始陸續販售，消費者可洽詢芝奇各地的合作經銷商及通路夥伴。</p>
+<p><a href="https://img.unikoshardware.com/wp-content/uploads/2024/07/03-trident-z5-royal-neo-gold-hero-banner.webp"><img decoding="async" loading="lazy" class="aligncenter size-full wp-image-150058" src="https://img.unikoshardware.com/wp-content/uploads/2024/07/03-trident-z5-royal-neo-gold-hero-banner.webp" alt="" width="1000" height="563" /></a></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://unikoshardware.com/2024/07/gskill-trident-z5-royal-neo-cl28.html/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>AMD 推出 AMD Fluid Motion Frames 2，畫格生成技術再進化</title>
+		<link>https://unikoshardware.com/2024/07/amd-introduce-fluid-motion-frames-2.html</link>
+					<comments>https://unikoshardware.com/2024/07/amd-introduce-fluid-motion-frames-2.html#respond</comments>
+		
+		<dc:creator><![CDATA[JC]]></dc:creator>
+		<pubDate>Tue, 30 Jul 2024 07:10:49 +0000</pubDate>
+				<category><![CDATA[新聞]]></category>
+		<category><![CDATA[News 新聞]]></category>
+		<category><![CDATA[AMD]]></category>
+		<guid isPermaLink="false">https://unikoshardware.com/?p=149969</guid>
+
+					<description><![CDATA[AMD 發布 AMD Fluid Motion Frames 2 技術預覽版，提供更低延遲和更高效能的畫格生成 [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><img decoding="async" loading="lazy" class="aligncenter wp-image-149970 size-full" src="https://img.unikoshardware.com/wp-content/uploads/2024/07/AMD-FLUID-MOTION-FRAMES-2-AFMF2.webp" alt="AMD 推出 AMD Fluid Motion Frames 2，畫格生成技術再進化" width="1200" height="634" /></p>
+<p>AMD 發布 AMD Fluid Motion Frames 2 技術預覽版，提供更低延遲和更高效能的畫格生成體驗。新版本支援無邊框全螢幕模式，並擴展至 Vulkan 和 OpenGL 遊戲。</p>
+<p><span id="more-149969"></span></p>
+<h2 class="font-600 text-lg font-bold">AMD Fluid Motion Frames 2 全新進化</h2>
+<p class="whitespace-pre-wrap break-words">AMD 最近宣布推出其畫格生成技術的新預覽版本 - <a href="https://community.amd.com/t5/gaming/amd-fluid-motion-frames-2-technical-preview-now-available/ba-p/697448" target="_blank" rel="noopener">AMD Fluid Motion Frames 2</a> (簡稱 AFMF 2)，該技術是 HYPR-RX 技術堆疊的一部分，旨在通過驅動程式級別的最佳化來提升遊戲性能，目前已經可在<a href="https://www.amd.com/en/resources/support-articles/release-notes/RN-RAD-WIN-AFMF2-TECH-Preview.html" target="_blank" rel="noopener">官網上下載測試</a>。</p>
+<p><a href="https://img.unikoshardware.com/wp-content/uploads/2024/07/AMD-FLUID-MOTION-FRAMES-2-AFMF2-1.webp"><img decoding="async" loading="lazy" class="aligncenter wp-image-149971 size-full" src="https://img.unikoshardware.com/wp-content/uploads/2024/07/AMD-FLUID-MOTION-FRAMES-2-AFMF2-1.webp" alt="" width="999" height="343" /></a></p>
+<p class="whitespace-pre-wrap break-words">AFMF 2 在多個方面進行最佳化，為玩家帶來更出色的畫格生成體驗：</p>
+<ul class="-mt-1 list-decimal space-y-2 pl-8">
+<li class="whitespace-normal break-words">延遲降低和效能提升：AFMF 2 顯著降低畫格生成的延遲，並通過新模式提高性能擴展性，特別適合快節奏遊戲。</li>
+<li class="whitespace-normal break-words">快速動作最佳化：改善快速動作場景中的畫格生成一致性，帶來更流暢的遊戲體驗和更高的幀率。</li>
+<li class="whitespace-normal break-words">無邊框全螢幕支援：為 RDNA 3 系列顯示卡擴展了顯示模式支援，確保與幾乎所有無邊框全螢幕遊戲的相容性。</li>
+<li class="whitespace-normal break-words">擴展 API 支援：AFMF 2 現在支援 OpenGL、Vulkan、DirectX 11 和 12 遊戲。</li>
+<li class="whitespace-normal break-words">Radeon Chill 互操作支援：AFMF 2 現在支援 Radeon Chill，提供低延遲的 FPS 限制選項。</li>
+</ul>
+<p class="whitespace-pre-wrap break-words">AFMF 2 目前作為技術預覽版提供，需要使用特殊驅動程式。新版本引入可選配的設定檔，讓玩家能根據需求調整：</p>
+<ul class="-mt-1 list-disc space-y-2 pl-8">
+<li class="whitespace-normal break-words">搜索模式：在高動態場景中暫時禁用 AFMF 時提供備用選項。</li>
+<li class="whitespace-normal break-words">效能模式：特別適合使用整合顯示卡的用戶，可能帶來更高的效能。</li>
+</ul>
+<p class="whitespace-pre-wrap break-words">另外，AFMF 2 在使用 Anti-Lag 和 Anti-Lag 2 技術時，也進一步降低了延遲：</p>
+<ul class="-mt-1 list-disc space-y-2 pl-8">
+<li class="whitespace-normal break-words">在《電馭叛客 2077》中，使用 Anti-Lag 時延遲降低了最多 28%。</li>
+</ul>
+<p><a href="https://img.unikoshardware.com/wp-content/uploads/2024/07/AMD-FLUID-MOTION-FRAMES-2-AFMF2-3.webp"><img decoding="async" loading="lazy" class="aligncenter wp-image-149973 size-full" src="https://img.unikoshardware.com/wp-content/uploads/2024/07/AMD-FLUID-MOTION-FRAMES-2-AFMF2-3.webp" alt="" width="999" height="369" /></a></p>
+<ul class="-mt-1 list-disc space-y-2 pl-8">
+<li class="whitespace-normal break-words">在《絕對武力 2》中，使用 Anti-Lag 2 時延遲降低了最多 12%。</li>
+</ul>
+<p><a href="https://img.unikoshardware.com/wp-content/uploads/2024/07/AMD-FLUID-MOTION-FRAMES-2-AFMF2-2.webp"><img decoding="async" loading="lazy" class="aligncenter wp-image-149972 size-full" src="https://img.unikoshardware.com/wp-content/uploads/2024/07/AMD-FLUID-MOTION-FRAMES-2-AFMF2-2.webp" alt="" width="999" height="422" /></a></p>
+<p class="whitespace-pre-wrap break-words">AFMF 2 目前支援 Radeon RX 7000 / 6000 系列顯示卡和 Radeon 7000 系列 APU。AMD 也確認支援 Ryzen 8000G 系列處理器。不同硬體可能有不同的建議設定檔，玩家可根據自己的設備選擇最適合的設定。</p>
+<p class="whitespace-pre-wrap break-words">AMD Fluid Motion Frames 2 的推出展現 AMD 在遊戲性能最佳化領域的持續創新。通過降低延遲、提高效能並擴展支援範圍，AFMF 2 為玩家帶來更優質遊戲體驗。隨著技術的進一步完善和正式版本的發布，可以期待 AMD 在畫格生成技術領域繼續引領潮流，為遊戲玩家帶來更多驚喜。</p>
+<p><a href="https://videocardz.com/newz/amd-introduces-fluid-motion-frames-2-better-frame-generation-with-lower-latency" target="_blank" rel="noopener">消息來源</a></p>
+<p><span style="color: #0000ff;">延伸閱讀</span></p>
+<p><a href="https://unikoshardware.com/2024/03/amd-fluid-motion-frames-game-test.html">AMD Fluid Motion Frames 實測，結合 HYPR-RX 提升遊戲體驗更輕鬆</a></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://unikoshardware.com/2024/07/amd-introduce-fluid-motion-frames-2.html/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

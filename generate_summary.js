@@ -27,6 +27,15 @@ async function getFeedsFromYaml() {
   }
 }
 
+function escapeXml(text) {
+  return text.replace(/[&]/g, (c) => {
+    switch (c) {
+      case '&': return '&amp;';
+      default: return c;
+    }
+  });
+}
+
 async function fetchRssFeed(url) {
   const { browser, page } = await connect({
     headless: 'auto',
@@ -44,25 +53,60 @@ async function fetchRssFeed(url) {
 
   try {
     let responseBody = '';
+    let finalUrl = '';
+    let wasRedirected = false;
+    let redirectCount = 0;
+
     page.on('response', async (response) => {
-      if (response.url() === url) {
+      if (response.url() === url || finalUrl === response.url()) {
         try {
           responseBody = await response.text();
+          finalUrl = response.url();
         } catch (error) {
           if (error.message.includes('Response body is unavailable for redirect responses')) {
-            console.log(`Redirect detected for ${url}. Bypassing...`);
+            console.log(`Redirect detected for ${url}. Following redirect to ${response.url()}...`);
+            wasRedirected = true;
+            redirectCount += 1;
+
+            if (redirectCount > 10) {
+              console.error(`Exceeded maximum redirect limit (10) for ${url}`);
+              return;
+            }
           } else {
             console.error(`Error fetching response body for ${url}:`, error);
           }
         }
       }
     });
+
     await page.goto(url, { waitUntil: 'networkidle0', timeout: 60000 });
-    if (!responseBody) {
+
+    if (wasRedirected && !responseBody) {
       responseBody = await page.content();
     }
-    const parser = new Parser();
-    return await parser.parseString(responseBody);
+
+    if (responseBody) {
+      const escapedFeedContent = escapeXml(responseBody);
+      const parser = new Parser();
+
+      try {
+        const parsedFeed = await parser.parseString(escapedFeedContent);
+        const links = parsedFeed.items.map(item => item.link);
+        if (wasRedirected) {
+          console.log(`RSS feed successfully obtained (${links.length} URLs) with redirect for ${url}. Final URL: ${finalUrl}`);
+        } else {
+          console.log(`RSS feed successfully obtained (${links.length} URLs) without redirect for ${url}`);
+        }
+
+        return parsedFeed;
+      } catch (parseError) {
+        console.error(`Error parsing RSS feed for ${url}:`, parseError);
+        return null;
+      }
+    } else {
+      console.error(`Failed to obtain RSS feed for ${url}`);
+      return null;
+    }
   } catch (error) {
     console.error(`Error fetching RSS feed ${url}:`, error);
     return null;
@@ -87,9 +131,44 @@ async function getHtmlContent(url) {
   });
 
   try {
+    let responseBody = '';
+    let finalUrl = '';
+    let wasRedirected = false;
+
+    page.on('response', async (response) => {
+      if (response.url() === url || finalUrl === response.url()) {
+        try {
+          responseBody = await response.text();
+          finalUrl = response.url();
+        } catch (error) {
+          if (error.message.includes('Response body is unavailable for redirect responses')) {
+            console.log(`Redirect detected for ${url}. Following redirect to ${response.url()}...`);
+            wasRedirected = true;
+          } else {
+            console.error(`Error fetching response body for ${url}:`, error);
+          }
+        }
+      }
+    });
+
     await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 60000 });
-    const content = await page.content();
-    return content;
+
+    if (wasRedirected && !responseBody) {
+      responseBody = await page.content();
+    }
+
+    if (responseBody) {
+      if (wasRedirected) {
+        console.log(`HTML content successfully obtained with redirect for ${url}. Final URL: ${finalUrl}`);
+      } else {
+        console.log(`HTML content successfully obtained without redirect for ${url}`);
+      }
+
+      return responseBody;
+    } else {
+      console.error(`Failed to obtain HTML content for ${url}`);
+      return null;
+    }
   } catch (error) {
     console.error(`Error fetching HTML content for ${url}:`, error);
     return null;
@@ -167,6 +246,8 @@ async function processFeeds() {
       if (link) {
         link.processed = true;
         await queue.add(async () => {
+          // Somes feeds like XDA contains many spaces and line break
+          link.link = link.link.replace(/\s+/g, '');
           console.log(`Exploring link: ${link.link}`);
           const html = await getHtmlContent(link.link);
           if (!html) return;
@@ -230,15 +311,13 @@ ${content}
   }
 }
 
-function splitContent(content, maxTokens) {
-  const fragments = [];
+async function splitContent(content, maxTokens) {
+  let fragments = [];
   let currentFragment = '';
   let currentTokens = 0;
-
-  const articles = content.split('---\n\n');
+  const articles = content.split('---\n');
   for (const article of articles) {
     const articleTokens = countTokensInText(article, TOKENIZER_PATH);
-
     if (currentTokens + articleTokens > maxTokens) {
       if (currentFragment) {
         fragments.push(currentFragment.trim());
@@ -246,7 +325,7 @@ function splitContent(content, maxTokens) {
       currentFragment = article;
       currentTokens = articleTokens;
     } else {
-      currentFragment += (currentFragment ? '---\n\n' : '') + article;
+      currentFragment += (currentFragment ? '---\n' : '') + article;
       currentTokens += articleTokens;
     }
   }
@@ -256,6 +335,19 @@ function splitContent(content, maxTokens) {
   }
 
   return fragments;
+}
+
+async function processLargeContent(content) {
+  const fragments = await splitContent(content, MAX_TOKENS);
+  let fragmentSummaries = [];
+
+  for (const fragment of fragments) {
+    const summary = await getSummaryFromAI(fragment);
+    fragmentSummaries.push(summary);
+  }
+
+  const combinedSummary = fragmentSummaries.join('\n\n');
+  return await getSummaryFromAI(combinedSummary);
 }
 
 async function main() {
@@ -270,28 +362,16 @@ async function main() {
     const totalTokens = countTokensInText(content, TOKENIZER_PATH);
     console.log(`Total tokens: ${totalTokens}`);
 
+    let summary;
     if (totalTokens > MAX_TOKENS) {
-      console.log('Content exceeds maximum tokens. Splitting into fragments...');
-      const fragments = splitContent(content, MAX_TOKENS);
-      console.log(`Split into ${fragments.length} fragments.`);
-      const fragmentSummaries = [];
-
-      for (let i = 0; i < fragments.length; i++) {
-        console.log(`Processing fragment ${i + 1} of ${fragments.length}`);
-        const summary = await getSummaryFromAI(fragments[i]);
-        fragmentSummaries.push(summary);
-      }
-
-      console.log('Generating final summary from fragment summaries...');
-      const finalSummary = await getSummaryFromAI(fragmentSummaries.join('\n\n'));
-      const summaryFileName = `summary_${dateStr}.md`;
-      await writeMarkdownFile(finalSummary, summaryFileName);
+      console.log('Content exceeds token limit. Processing in fragments...');
+      // summary = await processLargeContent(content);
     } else {
-      console.log('Generating summary for entire content...');
-      const summary = await getSummaryFromAI(content);
-      const summaryFileName = `summary_${dateStr}.md`;
-      await writeMarkdownFile(summary, summaryFileName);
+      // summary = await getSummaryFromAI(content);
     }
+
+    // const summaryFileName = `summary_${dateStr}.md`;
+    // await writeMarkdownFile(summary, summaryFileName);
 
     console.log('Finished processing feeds.');
   } catch (error) {

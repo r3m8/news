@@ -74,7 +74,7 @@ feeds:
   - name: Hardware Times
     url: https://hardwaretimes.com/feed/
   - name: HardZone
-    url: https://hardzone.es/feed/
+    url: https://hardzone.es/feed/?post_type%5B0%5D=post&post_type%5B1%5D=page&post_type%5B2%5D=best-pages&post_type%5B3%5D=branded&post_type%5B4%5D=noticias&post_type%5B5%5D=review&post_type%5B6%5D=marcas&post_type%5B7%5D=tutoriales&post_type%5B8%5D=reportajes&post_type%5B9%5D=ofertas
   - name: Heise
     url: https://www.heise.de/rss/heise-Rubrik-IT.rdf
   - name: Hexus
@@ -168,7 +168,7 @@ feeds:
   - name: TweakTown (Reviews)
     url: https://www.tweaktown.com/feeds/reviews.xml
   - name: Unikos Hardware
-    url: http://feeds.feedburner.com/UnikosHardware
+    url: https://feeds.feedburner.com/UnikosHardware
   - name: VideoCardz
     url: https://videocardz.com/rss-feed
   - name: Vortez
