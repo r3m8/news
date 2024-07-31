@@ -6,7 +6,7 @@ import { launch } from 'puppeteer';
 import { Readability } from '@mozilla/readability';
 import { JSDOM, VirtualConsole } from 'jsdom';
 import OpenAI from 'openai';
-import { countTokensInText } from './path/to/your/tokenizerFile.js';
+import { countTokensInText } from './tokenizer.js';
 
 const CONFIG_FILE = 'feeds.yml';
 const OUTPUT_DIR = 'summaries';
