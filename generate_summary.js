@@ -14,6 +14,7 @@ const CONCURRENCY_LIMIT = 1;
 const REQUEST_INTERVAL = 0;
 const LLM_MODEL = 'deepseek-chat';
 const TOKENIZER_PATH = 'tokenizers/deepseek-v2-chat-0628.json';
+const MAX_TOKENS = 100000;
 
 async function getFeedsFromYaml() {
   try {
@@ -190,6 +191,32 @@ ${content}
   }
 }
 
+function splitContent(content, maxTokens) {
+  const fragments = [];
+  let currentFragment = '';
+  let currentTokens = 0;
+
+  const articles = content.split('---');
+  for (const article of articles) {
+    const articleTokens = countTokensInText(article, TOKENIZER_PATH);
+
+    if (currentTokens + articleTokens > maxTokens) {
+      fragments.push(currentFragment);
+      currentFragment = '';
+      currentTokens = 0;
+    }
+
+    currentFragment += article + '---';
+    currentTokens += articleTokens;
+  }
+
+  if (currentFragment) {
+    fragments.push(currentFragment);
+  }
+
+  return fragments;
+}
+
 async function main() {
   try {
     console.log('Starting to process feeds...');
@@ -199,11 +226,24 @@ async function main() {
     const fileName = `full_content_${dateStr}.md`;
     await writeMarkdownFile(content, fileName);
 
-    // const summary = await getSummaryFromAI(content);
-    // const summaryFileName = `summary_${dateStr}.md`;
-    // await writeMarkdownFile(summary, summaryFileName);
+    const totalTokens = countTokensInText(content, TOKENIZER_PATH);
+    if (totalTokens > MAX_TOKENS) {
+      const fragments = splitContent(content, MAX_TOKENS);
+      const fragmentSummaries = [];
 
-    countTokensInText(content, TOKENIZER_PATH);
+      for (const fragment of fragments) {
+        const summary = await getSummaryFromAI(fragment);
+        fragmentSummaries.push(summary);
+      }
+
+      const finalSummary = await getSummaryFromAI(fragmentSummaries.join('\n\n'));
+      const summaryFileName = `summary_${dateStr}.md`;
+      await writeMarkdownFile(finalSummary, summaryFileName);
+    } else {
+      const summary = await getSummaryFromAI(content);
+      const summaryFileName = `summary_${dateStr}.md`;
+      await writeMarkdownFile(summary, summaryFileName);
+    }
 
     console.log('Finished processing feeds.');
   } catch (error) {
