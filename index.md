@@ -1,11 +1,14 @@
 ---
 layout: default
-title: Summaries
+title: News
 ---
-# Sum
 
-{% for file in site.static_files %}
-  {% if file.path contains 'summaries/' and file.extname == '.md' %}
-    - [{{ file.name | remove: '.md' }}]({{ site.baseurl }}{{ file.path | remove: '.md' | append: '.html' }})
+# News
+
+Here are the summaries:
+
+{% for summary in site.pages %}
+  {% if summary.path contains 'summaries/' %}
+    - [{{ summary.title }}]({{ summary.url | relative_url }})
   {% endif %}
 {% endfor %}

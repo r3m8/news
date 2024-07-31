@@ -2,3 +2,4 @@ title: News
 description: Pull feeds, summarize with AI and publish Markdown file.
 baseurl: "/news"
 url: "https://r3m8.github.io"
+markdown: kramdown
