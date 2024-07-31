@@ -9,6 +9,6 @@ Here are the summaries:
 
 {% for summary in site.pages %}
   {% if summary.path contains 'summaries/' %}
-    - [{{ summary.title }}]({{ summary.url | relative_url }})
+    - <a href="{{ file.path | relative_url }}">{{ file.name }}</a>
   {% endif %}
 {% endfor %}
