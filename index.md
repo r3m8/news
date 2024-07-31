@@ -5,12 +5,12 @@ title: News
 
 # News
 
-Here are the summaries:
-
-{% markdown %}
-{% for summary in site.pages %}
-  {% if summary.path contains 'summaries/' %}
-    - [{{ summary.title }}]({{ summary.url | relative_url }})
-  {% endif %}
-{% endfor %}
-{% endmarkdown %}
+<ul>
+  {% for file in site.static_files %}
+    {% if file.path contains 'summaries/' %}
+      <li>
+        <a href="{{ file.path | relative_url }}">{{ file.name }}</a>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>
