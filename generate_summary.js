@@ -2,7 +2,7 @@ import { promises as fs } from 'fs';
 import { join } from 'path';
 import { parse } from 'yaml';
 import Parser from 'rss-parser';
-import { launch } from 'puppeteer';
+import { connect } from 'puppeteer-real-browser';
 import { Readability } from '@mozilla/readability';
 import { JSDOM, VirtualConsole } from 'jsdom';
 import OpenAI from 'openai';
@@ -28,9 +28,21 @@ async function getFeedsFromYaml() {
 }
 
 async function fetchRssFeed(url) {
-  const browser = await launch({ headless: 'new' });
+  const { browser, page } = await connect({
+    headless: 'auto',
+    args: [
+      '--no-sandbox',
+      '--disable-setuid-sandbox',
+      '--disable-infobars',
+      '--window-position=0,0',
+      '--ignore-certifcate-errors',
+      '--ignore-certifcate-errors-spki-list',
+    ],
+    turnstile: true,
+    fingerprint: true,
+  });
+
   try {
-    const page = await browser.newPage();
     let responseBody = '';
     page.on('response', async (response) => {
       if (response.url() === url) {
@@ -45,7 +57,7 @@ async function fetchRssFeed(url) {
         }
       }
     });
-    await page.goto(url, { waitUntil: 'networkidle0' });
+    await page.goto(url, { waitUntil: 'networkidle0', timeout: 60000 });
     if (!responseBody) {
       responseBody = await page.content();
     }
@@ -60,10 +72,22 @@ async function fetchRssFeed(url) {
 }
 
 async function getHtmlContent(url) {
-  const browser = await launch({ headless: 'new' });
+  const { browser, page } = await connect({
+    headless: 'auto',
+    args: [
+      '--no-sandbox',
+      '--disable-setuid-sandbox',
+      '--disable-infobars',
+      '--window-position=0,0',
+      '--ignore-certifcate-errors',
+      '--ignore-certifcate-errors-spki-list',
+    ],
+    turnstile: true,
+    fingerprint: true,
+  });
+
   try {
-    const page = await browser.newPage();
-    await page.goto(url, { waitUntil: 'domcontentloaded' });
+    await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 60000 });
     const content = await page.content();
     return content;
   } catch (error) {
@@ -211,22 +235,24 @@ function splitContent(content, maxTokens) {
   let currentFragment = '';
   let currentTokens = 0;
 
-  const articles = content.split('---');
+  const articles = content.split('---\n\n');
   for (const article of articles) {
     const articleTokens = countTokensInText(article, TOKENIZER_PATH);
 
     if (currentTokens + articleTokens > maxTokens) {
-      fragments.push(currentFragment);
-      currentFragment = '';
-      currentTokens = 0;
+      if (currentFragment) {
+        fragments.push(currentFragment.trim());
+      }
+      currentFragment = article;
+      currentTokens = articleTokens;
+    } else {
+      currentFragment += (currentFragment ? '---\n\n' : '') + article;
+      currentTokens += articleTokens;
     }
-
-    currentFragment += article + '---';
-    currentTokens += articleTokens;
   }
 
   if (currentFragment) {
-    fragments.push(currentFragment);
+    fragments.push(currentFragment.trim());
   }
 
   return fragments;
@@ -237,24 +263,31 @@ async function main() {
     console.log('Starting to process feeds...');
     const content = await processFeeds();
     const date = new Date();
-    const dateStr = `${String(new Date().getHours()).padStart(2, '0')}-${String(new Date().getMinutes()).padStart(2, '0')}-${String(new Date().getDate()).padStart(2, '0')}-${String(new Date().getMonth() + 1).padStart(2, '0')}-${String(new Date().getFullYear()).slice(-2)}`;
+    const dateStr = `${String(date.getHours()).padStart(2, '0')}-${String(date.getMinutes()).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getFullYear()).slice(-2)}`;
     const fileName = `full_content_${dateStr}.md`;
     await writeMarkdownFile(content, fileName);
 
     const totalTokens = countTokensInText(content, TOKENIZER_PATH);
+    console.log(`Total tokens: ${totalTokens}`);
+
     if (totalTokens > MAX_TOKENS) {
+      console.log('Content exceeds maximum tokens. Splitting into fragments...');
       const fragments = splitContent(content, MAX_TOKENS);
+      console.log(`Split into ${fragments.length} fragments.`);
       const fragmentSummaries = [];
 
-      for (const fragment of fragments) {
-        const summary = await getSummaryFromAI(fragment);
+      for (let i = 0; i < fragments.length; i++) {
+        console.log(`Processing fragment ${i + 1} of ${fragments.length}`);
+        const summary = await getSummaryFromAI(fragments[i]);
         fragmentSummaries.push(summary);
       }
 
+      console.log('Generating final summary from fragment summaries...');
       const finalSummary = await getSummaryFromAI(fragmentSummaries.join('\n\n'));
       const summaryFileName = `summary_${dateStr}.md`;
       await writeMarkdownFile(finalSummary, summaryFileName);
     } else {
+      console.log('Generating summary for entire content...');
       const summary = await getSummaryFromAI(content);
       const summaryFileName = `summary_${dateStr}.md`;
       await writeMarkdownFile(summary, summaryFileName);
