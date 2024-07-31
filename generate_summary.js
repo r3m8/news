@@ -41,7 +41,6 @@ async function fetchRssFeed(url) {
     if (!responseBody) {
       responseBody = await page.content();
     }
-    console.log(responseBody)
     const parser = new Parser();
     return await parser.parseString(responseBody);
   } catch (error) {
