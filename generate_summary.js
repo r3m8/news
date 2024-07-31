@@ -31,11 +31,19 @@ async function fetchRssFeed(url) {
   const browser = await launch({ headless: 'new' });
   try {
     const page = await browser.newPage();
-    await page.goto(url, { waitUntil: 'domcontentloaded' });
-    const content = await page.content();
-
+    let responseBody = '';
+    page.on('response', async (response) => {
+      if (response.url() === url) {
+        responseBody = await response.text();
+      }
+    });
+    await page.goto(url, { waitUntil: 'networkidle0' });
+    if (!responseBody) {
+      responseBody = await page.content();
+    }
+    console.log(responseBody)
     const parser = new Parser();
-    return await parser.parseString(content);
+    return await parser.parseString(responseBody);
   } catch (error) {
     console.error(`Error fetching RSS feed ${url}:`, error);
     return null;
