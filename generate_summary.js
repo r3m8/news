@@ -28,13 +28,21 @@ async function getFeedsFromYaml() {
 }
 
 async function fetchRssFeed(url) {
-  const browser = await launch({ headless: 'new' });
+  const browser = await puppeteer.launch({ headless: 'new' });
   try {
     const page = await browser.newPage();
     let responseBody = '';
     page.on('response', async (response) => {
       if (response.url() === url) {
-        responseBody = await response.text();
+        try {
+          responseBody = await response.text();
+        } catch (error) {
+          if (error.message.includes('Response body is unavailable for redirect responses')) {
+            console.log(`Redirect detected for ${url}. Bypassing...`);
+          } else {
+            console.error(`Error fetching response body for ${url}:`, error);
+          }
+        }
       }
     });
     await page.goto(url, { waitUntil: 'networkidle0' });
@@ -114,6 +122,7 @@ async function processFeeds() {
   const allLinks = [];
   for (const feed of feeds) {
     const feedData = await fetchRssFeed(feed.url);
+    console.log(feedData)
     if (!feedData) continue;
 
     for (const item of feedData.items) {
