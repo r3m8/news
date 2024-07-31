@@ -122,7 +122,6 @@ async function processFeeds() {
   const allLinks = [];
   for (const feed of feeds) {
     const feedData = await fetchRssFeed(feed.url);
-    console.log(feedData)
     if (!feedData) continue;
 
     for (const item of feedData.items) {
