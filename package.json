@@ -1,5 +1,14 @@
 {
+  "name": "news",
+  "version": "0.0.1",
+  "description": "Pull feeds, summarize with AI and publish Markdown file.",
+  "main": "src/main.js",
   "type": "module",
+  "scripts": {
+    "start": "node src/main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "r3m8 <remy@brenans.sh>",
   "dependencies": {
     "@mozilla/readability": "^0.5.0",
     "jsdom": "^24.1.1",
@@ -9,6 +18,7 @@
     "puppeteer": "^22.14.0",
     "puppeteer-real-browser": "^1.2.31",
     "rss-parser": "^3.13.0",
+    "tokenizers": "^0.13.3",
     "yaml": "^2.5.0"
   }
 }
